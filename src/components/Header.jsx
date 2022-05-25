@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 import LoginButton from './LoginButtons/LoginButton'
@@ -12,6 +12,11 @@ const Header = () => {
     setIsLogged(!isLogged)
     return navigate("/");
   }
+
+  useEffect(() => {
+    if (!isLogged)
+      navigate('/')
+  }, [])
 
   return (
     <nav className="border-gray-200 sm:px-10 py-2.5 rounded">
