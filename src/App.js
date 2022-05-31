@@ -1,30 +1,44 @@
-//packages
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useRef, useEffect } from 'react';
+import { useLocation, Switch } from 'react-router-dom';
+import AppRoute from './utils/AppRoute';
+import ScrollReveal from './utils/ScrollReveal';
+import ReactGA from 'react-ga';
 
-//components
-import Header from './components/Header'
+// Layouts
+import LayoutDefault from './layouts/LayoutDefault';
 
-//views
-import Home from "./views/Home";
-import Curriculum from './views/Curriculum';
-import Progress from './views/Progress';
-import Schedule from "./views/Schedule";
-import Error from "./views/Error";
+// Views 
+import Home from './views/Home';
+
+// Initialize Google Analytics
+ReactGA.initialize(process.env.REACT_APP_GA_CODE);
+
+const trackPage = page => {
+  ReactGA.set({ page });
+  ReactGA.pageview(page);
+};
 
 const App = () => {
+
+  const childRef = useRef();
+  let location = useLocation();
+
+  useEffect(() => {
+    const page = location.pathname;
+    document.body.classList.add('is-loaded')
+    childRef.current.init();
+    trackPage(page);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location]);
+
   return (
-    <>
-      <BrowserRouter>
-        <Header/>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="Curriculum" element={<Curriculum />} />
-          <Route path="Progress" element={<Progress />} />
-          <Route path="Schedule" element={<Schedule />} />
-          <Route path="*" element={<Error />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <ScrollReveal
+      ref={childRef}
+      children={() => (
+        <Switch>
+          <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+        </Switch>
+      )} />
   );
 }
 
