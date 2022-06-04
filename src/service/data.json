@@ -1,0 +1,85 @@
+{
+  "success": [
+    {
+      "PA": 3.988769230769231,
+      "PAPA":3.943396226415094,
+      "academic_history_id": 1,
+      "code": 9999999,
+      "credit_bag": 77,
+      "credits_seen": 156,
+      "curricula": {
+        "curricula_id": 1,
+        "name": "test curricula"
+      },
+      "percentage": 94.54545454545455,
+      "semesters": {
+        "2018-1S": {
+          "PAPPI": 2.5,
+          "courses": [
+            {
+              "code": "999999999",
+              "color": "green",
+              "course_id": 1,
+              "credits": 150,
+              "grade": 2.0,
+              "last_time_seen": 0,
+              "name": "test course",
+              "passed": 0,
+              "program_component_id": 1,
+              "taking_course": 0,
+              "training_expertise_id": 1
+            },
+            {
+              "code": "888888888",
+              "color": "blue",
+              "course_id": 2,
+              "credits": 3,
+              "grade": 3.0,
+              "last_time_seen": 1,
+              "name": "test course 2",
+              "passed": 1,
+              "program_component_id": 1,
+              "taking_course": 0,
+              "training_expertise_id": 1
+            }
+          ],
+          "credits": 153
+        },
+        "2018-2S": {
+          "PAPPI": 4.0,
+          "courses": [
+            {
+              "code": "777777777",
+              "color": "red",
+              "course_id": 3,
+              "credits": 3,
+              "grade": 4.0,
+              "last_time_seen": 1,
+              "name": "test course 3",
+              "passed": 1,
+              "program_component_id": 1,
+              "taking_course": 0,
+              "training_expertise_id": 1
+            },
+            {
+              "code": "999999999",
+              "color": "green",
+              "course_id": 1,
+              "credits": 150,
+              "grade": 4.0,
+              "last_time_seen": 1,
+              "name": "test course",
+              "passed": 1,
+              "program_component_id": 1,
+              "taking_course": 0,
+              "training_expertise_id": 1
+            }
+          ],
+          "credits": 153
+        }
+      },
+      "total_credits": 165,
+      "user_id": 1
+    }
+  ]
+}

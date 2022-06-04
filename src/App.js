@@ -4,11 +4,17 @@ import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
 import ReactGA from 'react-ga';
 
+// Style
+import './App.css'
+
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
 
 // Views 
 import Home from './views/Home';
+import Progress from './views/Progress'
+import Curriculum from './views/Curriculum'
+import Error from './views/Error'
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -19,7 +25,6 @@ const trackPage = page => {
 };
 
 const App = () => {
-
   const childRef = useRef();
   let location = useLocation();
 
@@ -37,6 +42,9 @@ const App = () => {
       children={() => (
         <Switch>
           <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+          <AppRoute exact path="/progress" component={Progress} layout={LayoutDefault} />
+          <AppRoute exact path="/curriculum" component={Curriculum} layout={LayoutDefault} /> 
+          <AppRoute exact path="/error" component={Error} layout={LayoutDefault} /> 
         </Switch>
       )} />
   );
