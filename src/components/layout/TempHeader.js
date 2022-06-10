@@ -80,10 +80,20 @@ const Header = ({
 
   const dispatch = useDispatch();
   
-  const responseGoogle = (response) => {
-    if(response.tokenId){
-      dispatch(setToken({ token: response.tokenId }))
-      handleLogin();
+  const responseGoogle = (googleResponse) => {
+    const URL = "https://the-graphus.herokuapp.com/users/login"
+    if(googleResponse.tokenId){
+      const data = {tokenId: googleResponse.tokenId}
+      fetch(URL, {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers:{ 'Content-Type': 'application/json' }
+      }).then(response => response.json())
+      .then(response => {
+        dispatch(setToken(response.token))
+        handleLogin();
+      })
+      .catch(error => console.error('Error:', error))
     }
   }
   
@@ -94,7 +104,7 @@ const Header = ({
   }
 
   const responseGoogleLogOut = () => {
-    dispatch(setToken({ token: '' }))
+    dispatch(setToken(''))
     handleLogin();
   }
 

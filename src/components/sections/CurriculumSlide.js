@@ -1,5 +1,6 @@
 import React from "react";
 import classNames from 'classnames';
+import CurriculumCard from "../elements/CurriculumCard";
 
 const CurriculumSlide = ({
   className,
@@ -26,7 +27,7 @@ const CurriculumSlide = ({
         {...props}
         className={outerClasses}
       >
-
+        <CurriculumCard />
       </section>
     </>
   );
