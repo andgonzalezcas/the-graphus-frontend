@@ -13,6 +13,116 @@
       },
       "percentage": 94.54545454545455,
       "semesters": {
+        "2017-2S": {
+          "PAPPI": 2.5,
+          "courses": [
+            {
+              "code": "111111111",
+              "color": "green",
+              "course_id": 1,
+              "credits": 3,
+              "grade": 2.0,
+              "last_time_seen": 0,
+              "name": "test course",
+              "passed": 0,
+              "program_component_id": 1,
+              "taking_course": 0,
+              "training_expertise_id": 1
+            },
+            {
+              "code": "222222222",
+              "color": "blue",
+              "course_id": 2,
+              "credits": 3,
+              "grade": 3.0,
+              "last_time_seen": 1,
+              "name": "test course 2",
+              "passed": 1,
+              "program_component_id": 1,
+              "taking_course": 0,
+              "training_expertise_id": 1
+            },
+            {
+              "code": "333333333",
+              "color": "yellow",
+              "course_id": 3,
+              "credits": 3,
+              "grade": 3.0,
+              "last_time_seen": 1,
+              "name": "test course 3",
+              "passed": 1,
+              "program_component_id": 1,
+              "taking_course": 0,
+              "training_expertise_id": 1
+            },
+            {
+              "code": "444444444",
+              "color": "red",
+              "course_id": 4,
+              "credits": 3,
+              "grade": 3.0,
+              "last_time_seen": 1,
+              "name": "test course 4",
+              "passed": 1,
+              "program_component_id": 1,
+              "taking_course": 0,
+              "training_expertise_id": 1
+            },
+            {
+              "code": "111111111",
+              "color": "green",
+              "course_id": 1,
+              "credits": 3,
+              "grade": 2.0,
+              "last_time_seen": 0,
+              "name": "test course",
+              "passed": 0,
+              "program_component_id": 1,
+              "taking_course": 0,
+              "training_expertise_id": 1
+            },
+            {
+              "code": "222222222",
+              "color": "blue",
+              "course_id": 2,
+              "credits": 3,
+              "grade": 3.0,
+              "last_time_seen": 1,
+              "name": "test course 2",
+              "passed": 1,
+              "program_component_id": 1,
+              "taking_course": 0,
+              "training_expertise_id": 1
+            },
+            {
+              "code": "333333333",
+              "color": "yellow",
+              "course_id": 3,
+              "credits": 3,
+              "grade": 3.0,
+              "last_time_seen": 1,
+              "name": "test course 3",
+              "passed": 1,
+              "program_component_id": 1,
+              "taking_course": 0,
+              "training_expertise_id": 1
+            },
+            {
+              "code": "444444444",
+              "color": "red",
+              "course_id": 4,
+              "credits": 3,
+              "grade": 3.0,
+              "last_time_seen": 1,
+              "name": "test course 4",
+              "passed": 1,
+              "program_component_id": 1,
+              "taking_course": 0,
+              "training_expertise_id": 1
+            }
+          ],
+          "credits": 153
+        },
         "2018-1S": {
           "PAPPI": 2.5,
           "courses": [
@@ -76,6 +186,67 @@
             }
           ],
           "credits": 153
+        },
+        "2019-1S": {
+          "PAPPI": 2.5,
+          "courses": [
+            {
+              "code": "111111111",
+              "color": "green",
+              "course_id": 1,
+              "credits": 3,
+              "grade": 2.0,
+              "last_time_seen": 0,
+              "name": "test course",
+              "passed": 0,
+              "program_component_id": 1,
+              "taking_course": 0,
+              "training_expertise_id": 1
+            },
+            {
+              "code": "222222222",
+              "color": "blue",
+              "course_id": 2,
+              "credits": 3,
+              "grade": 3.0,
+              "last_time_seen": 1,
+              "name": "test course 2",
+              "passed": 1,
+              "program_component_id": 1,
+              "taking_course": 0,
+              "training_expertise_id": 1
+            },
+            {
+              "code": "333333333",
+              "color": "yellow",
+              "course_id": 3,
+              "credits": 3,
+              "grade": 3.0,
+              "last_time_seen": 1,
+              "name": "test course 3",
+              "passed": 1,
+              "program_component_id": 1,
+              "taking_course": 0,
+              "training_expertise_id": 1
+            },
+            {
+              "code": "444444444",
+              "color": "red",
+              "course_id": 4,
+              "credits": 3,
+              "grade": 3.0,
+              "last_time_seen": 1,
+              "name": "test course 4",
+              "passed": 1,
+              "program_component_id": 1,
+              "taking_course": 0,
+              "training_expertise_id": 1
+            }
+          ],
+          "credits": 153
+        },
+        "2019-2S": {
+          "credits": 0
         }
       },
       "total_credits": 165,

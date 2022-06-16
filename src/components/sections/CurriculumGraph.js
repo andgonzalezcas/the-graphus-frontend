@@ -26,7 +26,9 @@ const CurriculumGraph = ({
         {...props}
         className={outerClasses}
       >
-
+        <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
+          Great things <span className="text-color-primary">comming soon</span>
+        </h1>
       </section>
     </>
   );

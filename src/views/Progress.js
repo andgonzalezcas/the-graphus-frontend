@@ -1,4 +1,7 @@
 import React from "react";
+import ProgressProfile from "../components/elements/progressElements/ProgressProfile";
+
+import ProgressSlide from "../components/sections/ProgressSlide";
 
 const Progress = () => {
 
@@ -7,6 +10,8 @@ const Progress = () => {
       <h1>
         Progress
       </h1>
+      <ProgressProfile />
+      <ProgressSlide className="illustration-section-02"/>
     </>
   );
 }
