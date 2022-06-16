@@ -5,22 +5,22 @@ $imageIds: '1517021897933-0e0319cfbc28', '1533903345306-15d1c30952de', '15452434
 $bp-md: 600px;
 $bp-lg: 800px;
 
-.curriculum-card-background-green {
+.progress-card-background-green {
   background-image: url(https://images.unsplash.com/photo-1578364249730-0c4ee16426fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80);
   // background-image: url(https://images.unsplash.com/photo-1617957718645-7680362d6312?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
 }
 
-.curriculum-card-background-blue {
+.progress-card-background-blue {
   background-image: url(https://images.unsplash.com/photo-1530934567261-33ff5bc9d4e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
   // background-image: url(https://images.unsplash.com/photo-1617957743125-e0680ab56e04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
 }
 
-.curriculum-card-background-red {
+.progress-card-background-red {
   background-image: url(https://images.unsplash.com/photo-1601326167532-d457cd8186cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
   // background-image: url(https://images.unsplash.com/flagged/photo-1593005510509-d05b264f1c9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
 }
 
-.curriculum-card-background-yellow {
+.progress-card-background-yellow {
   background-image: url(https://images.unsplash.com/photo-1503117388374-af436bb2be2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=425&q=80);
   // background-image: url(https://images.unsplash.com/flagged/photo-1593005510329-8a4035a7238f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
 }
@@ -30,7 +30,7 @@ $bp-lg: 800px;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.page-curriculum-content {
+.page-progress-content {
   display: grid;
   grid-gap: 1rem;
   padding: 1rem;
@@ -46,7 +46,7 @@ $bp-lg: 800px;
   }
 }
 
-.curriculum-card {  
+.progress-card {  
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -113,7 +113,7 @@ $bp-lg: 800px;
   
 }
 
-.curriculum-content {
+.progress-content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -128,20 +128,20 @@ $bp-lg: 800px;
   }
 }
 
-.curriculum-title {
+.progress-title {
   font-size: 0.9rem;
   font-weight: bold;
   line-height: 1.2;
 }
 
-.curriculum-copy {
+.progress-copy {
   font-family: var(--font-serif);
   font-size: 0.8rem;
   font-style: italic;
   line-height: 1.35;
 }
 
-.curriculum-btn {
+.progress-btn {
   cursor: pointer;
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
@@ -164,14 +164,14 @@ $bp-lg: 800px;
 }
 
 @media (hover: hover) and (min-width: $bp-md) {
-  .curriculum-card:after {
+  .progress-card:after {
     transform: translateY(0);
   }
   
-  .curriculum-content {
+  .progress-content {
     transform: translateY(calc(100% - 4.5rem));
     
-    > *:not(.curriculum-title) {
+    > *:not(.progress-title) {
       opacity: 0;
       transform: translateY(1rem);
       transition:
@@ -180,17 +180,17 @@ $bp-lg: 800px;
     }
   }
   
-  .curriculum-card:hover,
-  .curriculum-card:focus-within {
+  .progress-card:hover,
+  .progress-card:focus-within {
     align-items: center;
 
     &:before { transform: translateY(-4%); }
     &:after { transform: translateY(-50%); }
 
-    .curriculum-content {
+    .progress-content {
       transform: translateY(0);
 
-      > *:not(.curriculum-title) {
+      > *:not(.progress-title) {
         opacity: 1;
         transform: translateY(0);
         transition-delay: calc(var(--d) / 8);
@@ -198,11 +198,11 @@ $bp-lg: 800px;
     }
   }
   
-  .curriculum-card:focus-within {
+  .progress-card:focus-within {
     &:before,
     &:after,
-    .curriculum-content,
-    .curriculum-content > *:not(.curriculum-title) {
+    .progress-content,
+    .progress-content > *:not(.progress-title) {
       transition-duration: 0s;
     }
   }

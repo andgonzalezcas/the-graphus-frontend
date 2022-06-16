@@ -63,7 +63,7 @@ const ProgressSlide = ({
             })
           } 
         </div>
-        <main className="page-curriculum-content reveal-from-bottom" data-reveal-delay="200">
+        <main className="page-progress-content reveal-from-bottom" data-reveal-delay="200">
         {
           data ?  
           <>
