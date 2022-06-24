@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
 import classNames from 'classnames';
-import ProgressCard from "../elements/progressElements/ProgressCard";
-
-import { useSelector } from 'react-redux'
-
-//test data
-const testData= require('../../service/data.json'); 
+import ProgressCard from "../elements/progressElements/ProgressCard"; 
 
 const ProgressSlide = ({
   className,
@@ -15,22 +10,20 @@ const ProgressSlide = ({
   bottomDivider,
   hasBgColor,
   invertColor,
+  historyData,
   ...props
 }) => {
-  const token = useSelector((state) => state.token.value)
-  console.log(token)
-
   const [filter, setFilter] = useState("")
   const [filtersArray, setFiltersArray] = useState([])
   const [data, setData] = useState()
   
   useEffect (() => {
-    setFiltersArray(Object.keys(testData.success[0].semesters))
+    setFiltersArray(Object.keys(historyData.semesters))
     setFilter(filtersArray[0])
   }, [])
   
   useEffect (() => {
-    setData(testData.success[0].semesters[filter])
+    setData(historyData.semesters[filter])
   }, [filter])
 
   const outerClasses = classNames(

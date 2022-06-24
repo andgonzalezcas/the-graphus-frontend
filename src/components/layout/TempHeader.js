@@ -6,6 +6,7 @@ import { Link, useHistory } from 'react-router-dom';
 import Logo from './partials/Logo';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 import { setToken } from './tokenSlice'
+import { setUser } from './userSlice';
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -91,6 +92,10 @@ const Header = ({
       }).then(response => response.json())
       .then(response => {
         dispatch(setToken(response.token))
+        dispatch(setUser({
+          'name': `${googleResponse.profileObj.givenName} ${googleResponse.profileObj.familyName}`,
+          'image': googleResponse.profileObj.imageUrl
+        }))
         handleLogin();
       })
       .catch(error => console.error('Error:', error))
@@ -105,6 +110,10 @@ const Header = ({
 
   const responseGoogleLogOut = () => {
     dispatch(setToken(''))
+    dispatch(setUser({
+      'name': '',
+      'image': ''
+    }))
     handleLogin();
   }
 

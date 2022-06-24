@@ -1,51 +1,57 @@
 import React from "react";
 
-const ProgressProfile = () => {
+const ProgressProfile = ({user, historyData}) => {
+  
+
   return(
     <div className="progress-profile-card">
       <div className="progress-profile-ds-top"></div>
       <div className="progress-profile-avatar-holder">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1820405/profile/profile-512.jpg?1533058950" alt="Albert Einstein" />
+        <img src={user.image} alt="User image" />
       </div>
       <div className="progress-profile-name">
-        <a href="https://codepen.io/AlbertFeynman/" target="_blank">Albert Feynman</a>
-        <h6 title="Followers"><i className="progress-profile-fas progress-profile-fa-users"></i> <span className="progress-profile-followers">90</span></h6>
-      </div>
-      <div className="progress-profile-button">
-        <a href="#" className="progress-profile-btn" onmousedown="follow();">Follow <i className="progress-profile-fas progress-profile-fa-user-plus"></i></a>
+        <p>{user.name}</p>
       </div>
       <div className="progress-profile-ds-info">
-        <div className="progress-profile-ds progress-profile-pens">
-          <h6 title="Number of pens created by the user">Pens <i className="progress-profile-fas progress-profile-fa-edit"></i></h6>
-          <p>29</p>
+        <div className="progress-profile-ds progress-profile-papa">
+          <h6 title="Number of pens created by the user">PAPA</h6>
+          <p>{historyData.PAPA.toFixed(2)}</p>
         </div>
-        <div className="progress-profile-ds progress-profile-projects">
-          <h6 title="Number of projects created by the user">Projects <i className="fas fa-project-diagram"></i></h6>
-          <p>0</p>
-        </div>
-        <div className="progress-profile-ds progress-profile-posts">
-          <h6 title="Number of posts">Posts <i className="progress-profile-fas progress-profile-fa-comments"></i></h6>
-          <p>0</p>
+        <div className="progress-profile-ds progress-profile-pappi">
+          <h6 title="Number of projects created by the user">CREDITOS VISTOS</h6>
+          <p>{historyData.credits_seen} / {historyData.total_credits}</p>
         </div>
       </div>
       <div className="progress-profile-ds-skill">
-        <h6>Skill <i className="progress-profile-fa progress-profile-fa-code" aria-hidden="true"></i></h6>
+        <h6>Tipologías <i className="progress-profile-fa progress-profile-fa-code" aria-hidden="true"></i></h6>
         <div className="progress-profile-skill progress-profile-html">
-          <h6><i className="progress-profile-fab progress-profile-fa-html5"></i> HTML5 </h6>
-          <div className="progress-profile-bar progress-profile-bar-html">
+          <h6><i className="progress-profile-fab progress-profile-fa-html5"></i>DISCIPLINAR OPTATIVA</h6>
+          <div className="progress-profile-bar" style={{width: "95%"}}>
             <p>95%</p>
           </div>
         </div>
         <div className="progress-profile-skill progress-profile-css">
-          <h6><i className="progress-profile-fab progress-profile-fa-css3-alt"></i> CSS3 </h6>
-          <div className="progress-profile-bar progress-profile-bar-css">
+          <h6><i className="progress-profile-fab progress-profile-fa-css3-alt"></i>FUND. OBLIGATORIA</h6>
+          <div className="progress-profile-bar" style={{width: "90%"}}>
             <p>90%</p>
           </div>
         </div>
         <div className="progress-profile-skill progress-profile-javascript">
-          <h6><i className="progress-profile-fab progress-profile-fa-js"></i> JavaScript </h6>
-          <div className="progress-profile-bar progress-profile-bar-js">
+          <h6><i className="progress-profile-fab progress-profile-fa-js"></i>FUND. OPTATIVA</h6>
+          <div className="progress-profile-bar" style={{width: "75%"}}>
             <p>75%</p>
+          </div>
+        </div>
+        <div className="progress-profile-skill progress-profile-javascript">
+          <h6><i className="progress-profile-fab progress-profile-fa-js"></i>DISCIPLINAR OBLIGATORIA</h6>
+          <div className="progress-profile-bar" style={{width: "75%"}}>
+            <p>75%</p>
+          </div>
+        </div>
+        <div className="progress-profile-skill progress-profile-javascript">
+          <h6><i className="progress-profile-fab progress-profile-fa-js"></i>LIBRE ELECCIÓN</h6>
+          <div className="progress-profile-bar" style={{width: "85%"}}>
+            <p>85%</p>
           </div>
         </div>
       </div>

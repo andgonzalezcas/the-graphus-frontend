@@ -1,31 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Krub:400,700');
 
 .progress-profile-card {
-  position: absolute;
   margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  // left: 0;
-  width: 250px;
-  height: 400px;
+  margin-top: 80px;
+  width: 550px;
+  height: 600px;
   border-radius: 10px;
   box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
   background: #151515;
-  overflow: hidden;
+
   .progress-profile-ds-top {
-    position: absolute;
     margin: auto;
     top: 0;
     right: 0;
     left: 0;
-    width: 300px;
-    height: 80px;
-    background: yellow;
+    border-radius: 10px;
+    width: 550px;
+    height: 30px;
+    background: color-bg(button-primary);
     animation: dsTop 1.5s;
   }
   .progress-profile-avatar-holder {
-    position: absolute;
     margin: auto;
     top: 40px;
     right: 0;
@@ -47,9 +42,9 @@
       object-fit: cover;
     }
   }
+
   .progress-profile-name {
-    position: absolute;
-    margin: auto;
+    margin: 0px auto;
     top: -60px;
     right: 0;
     bottom: 0;
@@ -65,12 +60,11 @@
       font-size: 18px;
         &:hover {
           text-decoration: underline;
-          color: yellow;
+          color: color-bg(button-primary);
       }
     }
     h6 {
-      position: absolute;
-      margin: auto;
+      margin: 0px auto;
       left: 0;
       right: 0;
       bottom: 0;
@@ -78,54 +72,27 @@
       width: 40px;
     }
   }
-  .progress-profile-button {
-    position: absolute;
-    margin: auto;
-    padding: 8px;
-    top: 20px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: inherit;
-    height: 40px;
-    text-align: center;
-    animation: fadeIn 2s ease-in;
-    outline: none;
-    a {
-      padding: 5px 20px;
-      border-radius: 10px;
-      color: white;
-      letter-spacing: 0.05em;
-      text-decoration: none;
-      font-size: 10px;
-      transition: all 1s;
-      &:hover {
-        color: white;
-        background: yellow;
-      }
-    }
-  }
+
   .progress-profile-ds-info {
-    position: absolute;
     margin: auto;
-    top: 120px;
+    top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     width: inherit;
-    height: 40px;
+    height: 100px;
     display: flex;
-    .progress-profile-pens, .progress-profile-projects, .progress-profile-posts {
+    .progress-profile-papa, .progress-profile-pappi {
       position: relative;
       left: -300px;
-      width: calc(250px / 3);
+      width: calc(550px / 2);
       text-align: center;
       color: white;
       animation: fadeInMove 2s;
       animation-fill-mode: forwards;
       h6 {
         text-transform: uppercase;
-        color: yellow;
+        color: color-bg(button-primary);
       }
       p {
         font-size: 12px;
@@ -140,20 +107,20 @@
       }
     }
   }
+  
   .progress-profile-ds-skill {
-    position: absolute;
     margin: auto;
     bottom: 10px;
     right: 0;
     left: 0;
-    width: 200px;
+    width: 400px;
     height: 100px;
     animation: mvBottom 1.5s;
     h6 {
       margin-bottom: 5px;
       font-weight: 700;
       text-transform: uppercase;
-      color: yellow;
+      color: color-bg(button-primary);
     }
     .progress-profile-skill {
       h6 {
@@ -164,12 +131,12 @@
         color: white;
       }
       .progress-profile-fab {
-        color: yellow;
+        color: color-bg(button-primary);
         font-size: 14px;
       }
       .progress-profile-bar {
         height: 5px;
-        background: yellow;
+        background: color-bg(button-primary);
         text-align: right;
         p {
           color: white;
@@ -180,21 +147,6 @@
         &:hover {
           background: white;
         }
-      }
-      .progress-profile-bar-html {
-        width: 95%;
-        animation: htmlSkill 1s;
-        animation-delay: .4s;
-      }
-      .progress-profile-bar-css {
-        width: 90%;
-        animation: cssSkill 2s;
-        animation-delay: .4s;
-      }
-      .progress-profile-bar-js {
-        width: 75%;
-        animation: jsSkill 3s;
-        animation-delay: .4s;
       }
     }
   }
@@ -248,5 +200,5 @@
 
 .progress-profile-following {
   color: white;
-  background: yellow;
+  background: color-bg(button-primary);
 }
