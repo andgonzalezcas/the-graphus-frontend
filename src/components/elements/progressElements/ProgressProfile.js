@@ -1,8 +1,9 @@
 import React from "react";
 
-const ProgressProfile = ({user, historyData}) => {
-  
+import walking from '../../../assets/images/walking.gif'
+import winning from '../../../assets/images/winning.gif'
 
+const ProgressProfile = ({user, historyData}) => {
   return(
     <div className="progress-profile-card">
       <div className="progress-profile-ds-top"></div>
@@ -20,6 +21,23 @@ const ProgressProfile = ({user, historyData}) => {
         <div className="progress-profile-ds progress-profile-pappi">
           <h6 title="Number of projects created by the user">CREDITOS VISTOS</h6>
           <p>{historyData.credits_seen} / {historyData.total_credits}</p>
+        </div>
+      </div>
+      <div className="progress-profile-ds-skill" style={{marginBottom: '70px'}}>
+        <h6>AVANCE TOTAL<i className="progress-profile-fa progress-profile-fa-code" aria-hidden="true"></i></h6>
+        <div className="progress-profile-skill progress-profile-html">
+          <h6><i className="progress-profile-fab progress-profile-fa-html5"></i>
+            <div className="progress-profile-avatar-holder">
+              {
+                historyData.percentage >= 100 ?
+                <img src={winning} /> :
+                <img src={walking} />
+              }
+            </div>
+          </h6>
+          <div className="progress-profile-bar" style={{width: historyData.percentage+'%'}}>
+            <p>{historyData.percentage.toFixed(2)}</p>
+          </div>
         </div>
       </div>
       <div className="progress-profile-ds-skill">
