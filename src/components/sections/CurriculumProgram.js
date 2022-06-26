@@ -69,10 +69,10 @@ const CurriculumProgram = ({
           className={outerClasses}
         >
           <div>
-            <h1 className="mt-0 mb-16">
+            <h1 className="mt-10 mb-16">
               <span className="text-color-primary">{data.program_info.name} - {data.program_info.code}</span>
             </h1>
-            <h2 className="mt-0 mb-16">
+            <h2 className="mt-0 mb-10">
               <span>Semestre {filtersArray[filter]}</span>
               <br />
             </h2>
@@ -92,7 +92,7 @@ const CurriculumProgram = ({
         </section>
       </>
     );
-  } return <p>Loading</p>
+  } return <p>Loading ...</p>
 }
 
 export default CurriculumProgram;
