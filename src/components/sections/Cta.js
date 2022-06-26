@@ -53,7 +53,7 @@ const Cta = ({
           className={innerClasses}
         >
           <div className="cta-slogan">
-            <h1>Give us ur money: </h1>
+            <h1>Apoyanos: </h1>
             <h4 className="m-0">
               Esta pagina fue creada sin animo de lucro, pero si las ves interesante y quieres apoyarnos puedes hacerlo por medio del siguiente codigo QR:
             </h4>
