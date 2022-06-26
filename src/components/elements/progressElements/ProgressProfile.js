@@ -16,11 +16,11 @@ const ProgressProfile = ({user, historyData}) => {
       <div className="progress-profile-ds-info">
         <div className="progress-profile-ds progress-profile-papa">
           <h6 title="Number of pens created by the user" style={{marginBottom: '0px'}}>PAPA</h6>
-          <p>{historyData.PAPA.toFixed(2)}</p>
+          <p style={{fontSize: '1.6rem'}}>{historyData.PAPA.toFixed(2)}</p>
         </div>
         <div className="progress-profile-ds progress-profile-pappi">
           <h6 title="Number of projects created by the user" style={{marginBottom: '0px'}}>CREDITOS VISTOS</h6>
-          <p>{historyData.credits_info.total}</p>
+          <p style={{fontSize: '1.6rem'}}>{historyData.credits_info.total}</p>
         </div>
       </div>
       <div className="progress-profile-ds-skill" style={{marginBottom: '100px'}}>
