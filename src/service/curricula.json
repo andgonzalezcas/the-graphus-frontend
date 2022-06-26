@@ -1,0 +1,141 @@
+{
+	"success": {
+		"code": "2879",
+		"courses": [
+			{
+				"code": "1000004",
+				"color": "#CCFFFF",
+				"course_id": 4,
+				"credits": 4,
+				"expertise": "Matemáticas",
+				"identifier": 4,
+				"name": "Cálculo diferencial",
+				"requirements": [],
+				"semester": 1
+			},
+			{
+				"code": "2025975",
+				"color": "#99CCFF",
+				"course_id": 14,
+				"credits": 3,
+				"expertise": "Contexto profesional y proyectos de ingeniería",
+				"identifier": 14,
+				"name": "Introducción a la ingeniería\nde sistemas y computación",
+				"requirements": [],
+				"semester": 1
+			},
+			{
+				"code": "2015734",
+				"color": "#F3F391",
+				"course_id": 24,
+				"credits": 3,
+				"expertise": "Métodos y tecnologias de software",
+				"identifier": 24,
+				"name": "Programación de computadores",
+				"requirements": [],
+				"semester": 1
+			},
+			{
+				"code": "1000019",
+				"color": "#FFFF99",
+				"course_id": 34,
+				"credits": 4,
+				"expertise": "Fisica",
+				"identifier": 34,
+				"name": "Fundamentos de mecánica",
+				"requirements": [],
+				"semester": 2
+			},
+			{
+				"code": "1000005",
+				"color": "#CCFFFF",
+				"course_id": 44,
+				"credits": 4,
+				"expertise": "Matemáticas",
+				"identifier": 44,
+				"name": "Cálculo integral",
+				"requirements": [
+					4
+				],
+				"semester": 2
+			},
+			{
+				"code": "1000003",
+				"color": "#CCFFFF",
+				"course_id": 54,
+				"credits": 4,
+				"expertise": "Matemáticas",
+				"identifier": 54,
+				"name": "Álgebra lineal",
+				"requirements": [
+					4
+				],
+				"semester": 2
+			},
+			{
+				"code": "2016375",
+				"color": "#F3F391",
+				"course_id": 64,
+				"credits": 3,
+				"expertise": "Métodos y tecnologias de software",
+				"identifier": 64,
+				"name": "Programación orientada a objetos",
+				"requirements": [
+					24
+				],
+				"semester": 2
+			},
+			{
+				"code": "1000013",
+				"color": "#0066CC",
+				"course_id": 74,
+				"credits": 3,
+				"expertise": "Probabilidad y estadística",
+				"identifier": 74,
+				"name": "Probabilidad y estadística",
+				"requirements": [],
+				"semester": 3
+			},
+			{
+				"code": "1000006",
+				"color": "#CCFFFF",
+				"course_id": 84,
+				"credits": 4,
+				"expertise": "Matemáticas",
+				"identifier": 84,
+				"name": "Calculo en varias variables",
+				"requirements": [
+					44
+				],
+				"semester": 3
+			},
+			{
+				"code": "2025963",
+				"color": "#99CC00",
+				"course_id": 94,
+				"credits": 4,
+				"expertise": "Ciencias de la computación",
+				"identifier": 94,
+				"name": "Matemáticas discretas I",
+				"requirements": [
+					4
+				],
+				"semester": 3
+			},
+			{
+				"code": "2016353",
+				"color": "#FFFF00",
+				"course_id": 104,
+				"credits": 3,
+				"expertise": "Infraestructura computación e información",
+				"identifier": 104,
+				"name": "Bases de datos",
+				"requirements": [
+					24
+				],
+				"semester": 3
+			}
+		],
+		"name": "Ingeniería de sistemas y computación"
+	}
+}

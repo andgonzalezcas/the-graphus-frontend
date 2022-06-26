@@ -1,30 +1,60 @@
-import React, { useEffect } from "react";
-import ProgressProfile from "../components/elements/progressElements/ProgressProfile";
+import React, { useEffect, useState } from "react";
+import { useSelector } from 'react-redux'
 
+import ProgressProfile from "../components/elements/progressElements/ProgressProfile";
 import ProgressSlide from "../components/sections/ProgressSlide";
 
-import axios from 'axios';
+// TEST DATA
+// const historyData = require('../service/data.json');
 
 const Progress = () => {
-  useEffect(() => {
-    axios.get('https://7cd7e624-672a-4821-805e-2d2c41e16ab7.mock.pstmn.io/users/academic-histories/4')
-  })
+  const user = useSelector((state) => state.user.value)
+  const token = useSelector((state) => state.token.value)
+  const [historyData, setHistoryData] = useState('')
+
+  const URL = process.env.REACT_APP_BACKEND_HOST + '/users/academic-histories/1900'
+
+  useEffect(() => { 
+    fetch(URL, {
+      headers: new Headers({
+        'Authorization': token, 
+    })
+    }).then(response => response.json())
+    .then(response => {
+      setHistoryData(response.success)
+      console.log(historyData)
+    })
+    .catch(error => console.error('Error:', error))
+  }, [])
+  
+  if (historyData) {
+    return (
+      <>
+        <ProgressProfile user={user} historyData={historyData}/>
+        <ProgressSlide className="illustration-section-02" historyData={historyData}/>
+      </>
+    )
+  } return <div>Loading ...</div>
+
+  const outerClasses = 'hero section center-content has-top-divide has-bottom-divider'
+
+  if (token) {
+    return (
+      <>
+        <ProgressProfile user={user} historyData={historyData}/>
+        <ProgressSlide className="illustration-section-02" historyData={historyData}/>
+      </>
+    )
+  }
   return (
-    <>
-      {/* <h1>
-        Progress
+    <section
+      className={outerClasses}
+    >
+      <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
+        U are not logged, <span className="text-color-primary">please go back to home</span>
       </h1>
-      <ProgressProfile />
-    <ProgressSlide className="illustration-section-02"/> */}
-      <div className="progress-container">
-        <h1>Como va tu <span className="text-color-primary">Carrera?</span></h1>
-        <div className="upper-progress-panel">
-          <ProgressProfile />
-          <div>Aqui va un grafico</div>
-        </div>
-      </div>
-    </>
-  );
+    </section>
+  )
 }
 
 export default Progress;

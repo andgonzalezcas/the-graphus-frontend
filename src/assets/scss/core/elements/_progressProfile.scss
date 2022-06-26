@@ -3,31 +3,27 @@
 $accent-color: color(secondary);
 
 .progress-profile-card {
-  position: relative;
-  width: 100%;
-  // margin: auto;
-  height: 100%;
+  margin: auto;
+  margin-top: 80px;
+  width: 550px;
+  height: 1000px;
   border-radius: 10px;
   box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
   background: #151515;
-  overflow: hidden;
-
   .progress-profile-ds-top {
-    position: absolute;
     margin: auto;
     top: 0;
     right: 0;
     left: 0;
-    width: 100%;
-    height: 80px;
-    background: $accent-color;
+    border-radius: 10px;
+    width: 550px;
+    height: 30px;
+    background: color-bg(button-primary);
     animation: dsTop 1.5s;
     z-index: 1;
   }
 
   .progress-profile-avatar-holder {
-    position: absolute;
-    z-index: 2;
     margin: auto;
     top: 30px;
     right: 0;
@@ -51,86 +47,95 @@ $accent-color: color(secondary);
     }
   }
 
-  .progress-profile-info {
-    @include progress-flex(column, flex-start, center);
-    position: absolute;
-    top: 137px;
-    width: 100%;
-    // height: calc(100% - 137px);
-
-    // * {
-    //   border: 1px solid cyan;
-    // }
-
-    .progress-profile-name {
-      animation: fadeIn 2s ease-in;
+  .progress-profile-name {
+    margin: 0px auto;
+    top: -60px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: inherit;
+    height: 40px;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+    a {
       color: white;
       text-decoration: none;
       font-weight: 700;
       font-size: 18px;
+        &:hover {
+          text-decoration: underline;
+          color: color-bg(button-primary);
+      }
+    }
+    h6 {
+      margin: 0px auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: white;
+      width: 40px;
     }
   }
 
   .progress-profile-ds-info {
-    @include progress-flex(row, space-evenly, center);
-    width: 100%;
-    animation: fadeInMove 2s;
-    animation-fill-mode: forwards;
-
-    .progress-profile-ds {
-      @include progress-flex(column, center, center);
-      flex: 1;
-
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: inherit;
+    height: 100px;
+    display: flex;
+    .progress-profile-papa, .progress-profile-pappi {
+      position: relative;
+      left: 0px;
+      width: calc(550px / 2);
+      text-align: center;
+      color: white;
       h6 {
-        margin: 0;
-        // text-transform: uppercase;
-        font-weight: bold;
-        font-size: 15px;
-        color: $accent-color;
+        text-transform: uppercase;
+        color: color-bg(button-primary);
       }
 
       p {
         margin: 0;
         font-size: 12px;
       }
-
-      &:nth-of-type(2) {
-        animation-delay: .5s;
-      }
-
-      &:nth-of-type(1) {
-        animation-delay: 1s;
-      }
     }
   }
-
-  .progress-profile-ds-credits {
-    width: 80%;
-
-    h5 {
-      margin: 0;
-      color: $accent-color;
+  
+  .progress-profile-ds-skill {
+    margin: auto;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    width: 400px;
+    height: 100px;
+    animation: mvBottom 1.5s;
+    h6 {
+      margin-bottom: 5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: color-bg(button-primary);
     }
-
-    .progress-profile-type {
-      width: 100%;
-
-      .title {
-        width: 100%;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        font-size: 10px;
+    .progress-profile-skill {
+      h6 {
+        font-weight: 400;
+        font-size: 8px;
+        letter-spacing: 0.05em;
+        margin: 20px 0;
+        color: white;
+      }
+      .progress-profile-fab {
+        color: color-bg(button-primary);
+        font-size: 14px;
       }
 
       .progress-profile-bar {
-        border: 3px solid $accent-color;
-        border-radius: 20px;
-      }
-
-      .progress-bar-percentage {
-        div {
-          text-align: right;
-          font-weight: bold;
+        height: 5px;
+        background: color-bg(button-primary);
+        text-align: right;
+        p {
           color: white;
           font-size: 10px;
           height: 25px;
@@ -224,5 +229,5 @@ $accent-color: color(secondary);
 
 .progress-profile-following {
   color: white;
-  background: $accent-color;
+  background: color-bg(button-primary);
 }

@@ -6,6 +6,7 @@ import { Link, useHistory } from 'react-router-dom';
 import Logo from './partials/Logo';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 import { setToken } from './tokenSlice'
+import { setUser } from './userSlice';
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -81,7 +82,8 @@ const Header = ({
   const dispatch = useDispatch();
   
   const responseGoogle = (googleResponse) => {
-    const URL = "https://the-graphus.herokuapp.com/users/login"
+    const URL = process.env.REACT_APP_BACKEND_HOST + "/users/login"
+    console.log(googleResponse)
     if(googleResponse.tokenId){
       const data = {tokenId: googleResponse.tokenId}
       fetch(URL, {
@@ -90,7 +92,11 @@ const Header = ({
         headers:{ 'Content-Type': 'application/json' }
       }).then(response => response.json())
       .then(response => {
-        dispatch(setToken(response.token))
+        dispatch(setToken(response.success.authorization.access_token))
+        dispatch(setUser({
+          'name': `${googleResponse.profileObj.givenName} ${googleResponse.profileObj.familyName}`,
+          'image': googleResponse.profileObj.imageUrl
+        }))
         handleLogin();
       })
       .catch(error => console.error('Error:', error))
@@ -105,6 +111,10 @@ const Header = ({
 
   const responseGoogleLogOut = () => {
     dispatch(setToken(''))
+    dispatch(setUser({
+      'name': '',
+      'image': ''
+    }))
     handleLogin();
   }
 
