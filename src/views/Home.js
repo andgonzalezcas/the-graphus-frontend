@@ -15,7 +15,7 @@ const Home = () => {
       <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
       {/* <Testimonial topDivider /> */}
       <Cta split />
-      <a href="https://icons8.com/">icons by Icons8</a>
+      {/* <a href="https://icons8.com/">icons by Icons8</a> */}
     </>
   );
 }

@@ -8,7 +8,7 @@ const ProgressCard = ({ course }) => {
         <h2 className="progress-title">{`${course.name} ${course.code}`}</h2>
         <p className="progress-copy">{`Creditos: ${course.credits}`}</p>
         <p className="progress-copy">{`Promedio: ${course.grade}`}</p>
-        <p className="progress-copy">{`Aprobó: ${course.passed ? 'true' : 'false'}`}</p>
+        <p className="progress-copy">{`Aprobó: ${course.passed ? 'SI' : 'NO'}`}</p>
         {/* <button className="curriculum-btn">View Trips</button> */}
       </div>
     </div>

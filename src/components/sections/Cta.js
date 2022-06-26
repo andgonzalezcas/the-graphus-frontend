@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
-import Input from '../elements/Input';
+
+import QR_donaciones from '../../assets/images/QR_donaciones.png'
 
 const propTypes = {
   ...SectionProps.types,
@@ -52,16 +53,13 @@ const Cta = ({
           className={innerClasses}
         >
           <div className="cta-slogan">
-            <h3 className="m-0">
-              Quieres recibir Notificaciones con todas las actualizaciones?
-              </h3>
+            <h1>Apoyanos: </h1>
+            <h4 className="m-0">
+              Esta pagina fue creada sin animo de lucro, pero si las ves interesante y quieres apoyarnos puedes hacerlo por medio del siguiente codigo QR:
+            </h4>
           </div>
           <div className="cta-action">
-            <Input id="newsletter" type="email" label="Subscribe" labelHidden hasIcon="right" placeholder="Tu email aqui">
-              <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 5H1c-.6 0-1 .4-1 1s.4 1 1 1h8v5l7-6-7-6v5z" fill="#376DF9" />
-              </svg>
-            </Input>
+            <img style={{width: '500px'}} src={QR_donaciones}/>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux'
 
 // Sections
 import CurriculumGraph from "../components/sections/CurriculumGraph";
+import CurriculumProgram from "../components/sections/CurriculumProgram";
 
 const Curriculum = () => {
   const token = useSelector((state) => state.token.value)
@@ -10,6 +11,8 @@ const Curriculum = () => {
   return (
     <>
       <CurriculumGraph className="illustration-section-01" />
+      {/* <CurriculumGraph className="illustration-section-01"/> */}
+      <CurriculumProgram className="illustration-section-02"/>
     </>
   )
 
