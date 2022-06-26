@@ -4,11 +4,13 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
+    "axios": "^0.27.2",
     "classnames": "^2.2.6",
     "graphviz-react": "^1.2.0",
     "lodash": "^4.17.15",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-flow-renderer": "^10.3.8",
     "react-ga": "^2.7.0",
     "react-google-login": "^5.2.2",
     "react-redux": "^8.0.2",

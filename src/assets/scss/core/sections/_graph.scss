@@ -1,0 +1,88 @@
+@mixin neon-border($color) {
+    color: $color;
+    border: 2px solid $color;
+    box-shadow:
+        0 0 2px $color,
+        inset 0 0 2px $color,
+        0 0 3px $color,
+        inset 0 0 3px $color,
+        0 0 3px $color,
+        inset 0 0 1px $color;
+}
+
+.graph-container {
+    width: 90%;
+    height: 100vh;
+    border: 1px solid white;
+}
+
+.color-white {
+    @include neon-border(white);
+}
+
+.color-green {
+    @include neon-border(#2add2a);
+}
+
+.color-blue {
+    @include neon-border(#2479ce);
+}
+
+.color-orange {
+    @include neon-border(#ff7700);
+}
+
+.color-yellow {
+    @include neon-border(#eaff00);
+}
+
+.course-node {
+    @include progress-flex(column, center, center);
+    background-color: transparent;
+    padding: 20px;
+    position: relative;
+
+    .course-title {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .course-code {
+        color: #333;
+        font-size: 10px;
+    }
+
+    .course-expertise {
+        color: white;
+        font-size: 15px;
+    }
+
+    .course-credits {
+
+        // @include progress-flex(column, flex-start, center);
+
+        span {
+            color: white;
+            font-weight: bold;
+        }
+
+        label {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 5px;
+            height: 30px;
+            color: gray;
+        }
+    }
+
+    .course-identifier {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0;
+        width: 20px;
+        aspect-ratio: 1 / 1;
+        font-size: 10px;
+        color: white;
+    }
+}
