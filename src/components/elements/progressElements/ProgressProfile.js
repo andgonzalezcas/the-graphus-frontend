@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+
 
 import walking from '../../../assets/images/walking.gif'
 import winning from '../../../assets/images/winning.gif'

@@ -10,7 +10,7 @@ const Curriculum = () => {
 
   return (
     <>
-      {/* <CurriculumGraph className="illustration-section-01"/> */}
+      <CurriculumGraph className="illustration-section-01" />
       <CurriculumProgram className="illustration-section-02"/>
     </>
   )
@@ -20,8 +20,7 @@ const Curriculum = () => {
   if (token) {
     return (
       <>
-        {/* <CurriculumGraph className="illustration-section-01"/> */}
-        <CurriculumProgram className="illustration-section-02"/>
+        <CurriculumGraph className="illustration-section-01" />
       </>
     )
   }
