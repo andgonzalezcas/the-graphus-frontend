@@ -1,200 +1,140 @@
 @import url('https://fonts.googleapis.com/css?family=Krub:400,700');
 
+$accent-color: color(secondary);
+
 .progress-profile-card {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  // left: 0;
-  width: 250px;
-  height: 400px;
+  position: relative;
+  width: 100%;
+  // margin: auto;
+  height: 100%;
   border-radius: 10px;
   box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
   background: #151515;
   overflow: hidden;
+
   .progress-profile-ds-top {
     position: absolute;
     margin: auto;
     top: 0;
     right: 0;
     left: 0;
-    width: 300px;
+    width: 100%;
     height: 80px;
-    background: yellow;
+    background: $accent-color;
     animation: dsTop 1.5s;
+    z-index: 1;
   }
+
   .progress-profile-avatar-holder {
     position: absolute;
+    z-index: 2;
     margin: auto;
-    top: 40px;
+    top: 30px;
     right: 0;
     left: 0;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     box-shadow: 0 0 0 5px #151515,
-                inset 0 0 0 5px #000000,
-                inset 0 0 0 5px #000000,
-                inset 0 0 0 5px #000000,
-                inset 0 0 0 5px #000000,;
+      inset 0 0 0 5px #000000,
+      inset 0 0 0 5px #000000,
+      inset 0 0 0 5px #000000,
+      inset 0 0 0 5px #000000, ;
     background: white;
     overflow: hidden;
     animation: mvTop 1.5s;
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
-  .progress-profile-name {
+
+  .progress-profile-info {
+    @include progress-flex(column, flex-start, center);
     position: absolute;
-    margin: auto;
-    top: -60px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: inherit;
-    height: 40px;
-    text-align: center;
-    animation: fadeIn 2s ease-in;
-    a {
+    top: 137px;
+    width: 100%;
+    // height: calc(100% - 137px);
+
+    // * {
+    //   border: 1px solid cyan;
+    // }
+
+    .progress-profile-name {
+      animation: fadeIn 2s ease-in;
       color: white;
       text-decoration: none;
       font-weight: 700;
       font-size: 18px;
-        &:hover {
-          text-decoration: underline;
-          color: yellow;
-      }
-    }
-    h6 {
-      position: absolute;
-      margin: auto;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      color: white;
-      width: 40px;
     }
   }
-  .progress-profile-button {
-    position: absolute;
-    margin: auto;
-    padding: 8px;
-    top: 20px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: inherit;
-    height: 40px;
-    text-align: center;
-    animation: fadeIn 2s ease-in;
-    outline: none;
-    a {
-      padding: 5px 20px;
-      border-radius: 10px;
-      color: white;
-      letter-spacing: 0.05em;
-      text-decoration: none;
-      font-size: 10px;
-      transition: all 1s;
-      &:hover {
-        color: white;
-        background: yellow;
-      }
-    }
-  }
+
   .progress-profile-ds-info {
-    position: absolute;
-    margin: auto;
-    top: 120px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: inherit;
-    height: 40px;
-    display: flex;
-    .progress-profile-pens, .progress-profile-projects, .progress-profile-posts {
-      position: relative;
-      left: -300px;
-      width: calc(250px / 3);
-      text-align: center;
-      color: white;
-      animation: fadeInMove 2s;
-      animation-fill-mode: forwards;
+    @include progress-flex(row, space-evenly, center);
+    width: 100%;
+    animation: fadeInMove 2s;
+    animation-fill-mode: forwards;
+
+    .progress-profile-ds {
+      @include progress-flex(column, center, center);
+      flex: 1;
+
       h6 {
-        text-transform: uppercase;
-        color: yellow;
+        margin: 0;
+        // text-transform: uppercase;
+        font-weight: bold;
+        font-size: 15px;
+        color: $accent-color;
       }
+
       p {
+        margin: 0;
         font-size: 12px;
       }
-    }
-    .progress-profile-ds {
+
       &:nth-of-type(2) {
         animation-delay: .5s;
       }
+
       &:nth-of-type(1) {
         animation-delay: 1s;
       }
     }
   }
-  .progress-profile-ds-skill {
-    position: absolute;
-    margin: auto;
-    bottom: 10px;
-    right: 0;
-    left: 0;
-    width: 200px;
-    height: 100px;
-    animation: mvBottom 1.5s;
-    h6 {
-      margin-bottom: 5px;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: yellow;
+
+  .progress-profile-ds-credits {
+    width: 80%;
+
+    h5 {
+      margin: 0;
+      color: $accent-color;
     }
-    .progress-profile-skill {
-      h6 {
-        font-weight: 400;
-        font-size: 8px;
-        letter-spacing: 0.05em;
-        margin: 4px 0;
-        color: white;
+
+    .progress-profile-type {
+      width: 100%;
+
+      .title {
+        width: 100%;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 10px;
       }
-      .progress-profile-fab {
-        color: yellow;
-        font-size: 14px;
-      }
+
       .progress-profile-bar {
-        height: 5px;
-        background: yellow;
-        text-align: right;
-        p {
+        border: 3px solid $accent-color;
+        border-radius: 20px;
+      }
+
+      .progress-bar-percentage {
+        div {
+          text-align: right;
+          font-weight: bold;
           color: white;
-          font-size: 8px;
-          padding-top: 5px;
-          animation: fadeIn 5s;
+          font-size: 10px;
+          height: 25px;
         }
-        &:hover {
-          background: white;
-        }
-      }
-      .progress-profile-bar-html {
-        width: 95%;
-        animation: htmlSkill 1s;
-        animation-delay: .4s;
-      }
-      .progress-profile-bar-css {
-        width: 90%;
-        animation: cssSkill 2s;
-        animation-delay: .4s;
-      }
-      .progress-profile-bar-js {
-        width: 75%;
-        animation: jsSkill 3s;
-        animation-delay: .4s;
       }
     }
   }
@@ -205,6 +145,7 @@
     opacity: 0;
     left: -300px;
   }
+
   100% {
     opacity: 1;
     left: 0;
@@ -212,41 +153,76 @@
 }
 
 @keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes htmlSkill {
-  0% {width: 0;}
-  100% {width: 95%;}
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 95%;
+  }
 }
 
 @keyframes cssSkill {
-  0% {width: 0;}
-  100% {width: 90%;}
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 90%;
+  }
 }
 
 @keyframes jsSkill {
-  0% {width: 0;}
-  100% {width: 75%;}
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 75%;
+  }
 }
 
 @keyframes mvBottom {
-  0% {bottom: -150px;}
-  100% {bottom: 10px;}
+  0% {
+    bottom: -150px;
+  }
+
+  100% {
+    bottom: 10px;
+  }
 }
 
 @keyframes mvTop {
-  0% {top: -150px;}
-  100% {top: 40px;}
+  0% {
+    top: -150px;
+  }
+
+  100% {
+    top: 40px;
+  }
 }
 
 @keyframes dsTop {
-  0% {top: -150px;}
-  100% {top: 0;}
+  0% {
+    top: -150px;
+  }
+
+  100% {
+    top: 0;
+  }
 }
 
 .progress-profile-following {
   color: white;
-  background: yellow;
+  background: $accent-color;
 }

@@ -1,0 +1,26 @@
+@mixin progress-flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.progress-container {
+    @include progress-flex(column, center, center);
+    margin-top: 30px;
+}
+
+.upper-progress-panel {
+    @include progress-flex(row, center, center);
+    width: 90%;
+    height: 600px;
+    gap: 20px;
+
+    .progress-profile-card {
+        flex: 1;
+    }
+
+    div {
+        flex: 2;
+    }
+}
