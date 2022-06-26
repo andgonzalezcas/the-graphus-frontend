@@ -7,20 +7,21 @@ import CurriculumProgram from "../components/sections/CurriculumProgram";
 
 const Curriculum = () => {
   const token = useSelector((state) => state.token.value)
-  
+
   return (
     <>
       {/* <CurriculumGraph className="illustration-section-01"/> */}
       <CurriculumProgram className="illustration-section-02"/>
     </>
   )
-  
+
   const outerClasses = 'hero section center-content has-top-divide has-bottom-divider'
 
   if (token) {
     return (
       <>
-        <CurriculumGraph className="illustration-section-01"/>
+        {/* <CurriculumGraph className="illustration-section-01"/> */}
+        <CurriculumProgram className="illustration-section-02"/>
       </>
     )
   }
