@@ -13,13 +13,26 @@ const ProgressSlide = ({
   historyData,
   ...props
 }) => {
-  const [filter, setFilter] = useState("")
+  const [filter, setFilter] = useState(1)
   const [filtersArray, setFiltersArray] = useState([])
   const [data, setData] = useState()
+
+  const getSemesters = (semesters) => {
+    let returnArray = []
+
+    semesters.map(semester => {
+      const object = {
+        semester_label: semester.semester_label,
+        semester_id: semester.semester - 1
+      }
+      returnArray.push(object)
+    })
+    return returnArray
+  }
   
   useEffect (() => {
-    setFiltersArray(Object.keys(historyData.semesters))
-    setFilter(filtersArray[0])
+    setFiltersArray(getSemesters(historyData.semesters))
+    setFilter(0)
   }, [])
   
   useEffect (() => {
@@ -35,43 +48,38 @@ const ProgressSlide = ({
     className
   );
 
-  return (
-    <>
+  if (data) {
+    return (
       <section
         {...props}
         className={outerClasses}
       >
-        <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-          <span className="text-color-primary">{filter}</span>
+        <h1 className="mt-0 mb-16">
+          <span className="text-color-primary">{filtersArray[filter].semester_label}</span>
           <br/>
         </h1>
-        <div className="pagination-container reveal-from-bottom" data-reveal-delay="200">
+        <div className="pagination-container">
           {
             filtersArray.map((semester, index) =>{
               return (
-                <div className="pagination-number" key={index} onClick={() => {setFilter(filtersArray[index])}}>
-                  {semester}
+                <div className="pagination-number" key={index} onClick={() => {setFilter(filtersArray[index].semester_id)}}>
+                  {semester.semester_label}
                 </div>
               )
             })
           } 
         </div>
-        <main className="page-progress-content reveal-from-bottom" data-reveal-delay="200">
-        {
-          data ?  
-          <>
-            {
-              data.courses ? 
-              data.courses.map((course, index) => <ProgressCard key={index} course={course}/>) :
-              <p>Este semestre no viste ningun curso</p>
-            }
-          </>:
-          <p>Selecciona un semestre</p>
-        }
-        </main> 
+        <main className="page-progress-content">
+          {
+            data.courses ? 
+            data.courses.map((course, index) => <ProgressCard key={index} course={course}/>) :
+            <p>Este semestre no viste ningun curso</p>
+          }
+        </main>
       </section>
-    </>
-  );
+    );
+  } return <></>
+
 }
 
 export default ProgressSlide;

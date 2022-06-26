@@ -15,15 +15,15 @@ const ProgressProfile = ({user, historyData}) => {
       </div>
       <div className="progress-profile-ds-info">
         <div className="progress-profile-ds progress-profile-papa">
-          <h6 title="Number of pens created by the user">PAPA</h6>
+          <h6 title="Number of pens created by the user" style={{marginBottom: '0px'}}>PAPA</h6>
           <p>{historyData.PAPA.toFixed(2)}</p>
         </div>
         <div className="progress-profile-ds progress-profile-pappi">
-          <h6 title="Number of projects created by the user">CREDITOS VISTOS</h6>
-          <p>{historyData.credits_seen} / {historyData.total_credits}</p>
+          <h6 title="Number of projects created by the user" style={{marginBottom: '0px'}}>CREDITOS VISTOS</h6>
+          <p>{historyData.credits_info.total}</p>
         </div>
       </div>
-      <div className="progress-profile-ds-skill" style={{marginBottom: '70px'}}>
+      <div className="progress-profile-ds-skill" style={{marginBottom: '100px'}}>
         <h6>AVANCE TOTAL<i className="progress-profile-fa progress-profile-fa-code" aria-hidden="true"></i></h6>
         <div className="progress-profile-skill progress-profile-html">
           <h6><i className="progress-profile-fab progress-profile-fa-html5"></i>
@@ -35,41 +35,35 @@ const ProgressProfile = ({user, historyData}) => {
               }
             </div>
           </h6>
-          <div className="progress-profile-bar" style={{width: historyData.percentage+'%'}}>
-            <p>{historyData.percentage.toFixed(2)}</p>
+          <div className="progress-profile-bar" style={{width: historyData.progress_info.total+'%', marginTop: '25px'}}>
+            <p>{historyData.progress_info.total.toFixed(2)}%</p>
           </div>
         </div>
       </div>
       <div className="progress-profile-ds-skill">
         <h6>Tipologías <i className="progress-profile-fa progress-profile-fa-code" aria-hidden="true"></i></h6>
         <div className="progress-profile-skill progress-profile-html">
-          <h6><i className="progress-profile-fab progress-profile-fa-html5"></i>DISCIPLINAR OPTATIVA</h6>
-          <div className="progress-profile-bar" style={{width: "95%"}}>
-            <p>95%</p>
+          <h6><i className="progress-profile-fab progress-profile-fa-html5"></i>DISCIPLINAR</h6>
+          <div className="progress-profile-bar" style={{width: historyData.progress_info.disciplinar+'%'}}>
+            <p>{historyData.progress_info.disciplinar.toFixed(2)}%</p>
           </div>
         </div>
         <div className="progress-profile-skill progress-profile-css">
-          <h6><i className="progress-profile-fab progress-profile-fa-css3-alt"></i>FUND. OBLIGATORIA</h6>
-          <div className="progress-profile-bar" style={{width: "90%"}}>
-            <p>90%</p>
-          </div>
-        </div>
-        <div className="progress-profile-skill progress-profile-javascript">
-          <h6><i className="progress-profile-fab progress-profile-fa-js"></i>FUND. OPTATIVA</h6>
-          <div className="progress-profile-bar" style={{width: "75%"}}>
-            <p>75%</p>
-          </div>
-        </div>
-        <div className="progress-profile-skill progress-profile-javascript">
-          <h6><i className="progress-profile-fab progress-profile-fa-js"></i>DISCIPLINAR OBLIGATORIA</h6>
-          <div className="progress-profile-bar" style={{width: "75%"}}>
-            <p>75%</p>
+          <h6><i className="progress-profile-fab progress-profile-fa-css3-alt"></i>FUNDAMENTACION</h6>
+          <div className="progress-profile-bar" style={{width: historyData.progress_info.fundamentacion+'%'}}>
+            <p>{historyData.progress_info.fundamentacion.toFixed(2)}%</p>
           </div>
         </div>
         <div className="progress-profile-skill progress-profile-javascript">
           <h6><i className="progress-profile-fab progress-profile-fa-js"></i>LIBRE ELECCIÓN</h6>
-          <div className="progress-profile-bar" style={{width: "85%"}}>
-            <p>85%</p>
+          <div className="progress-profile-bar" style={{width: historyData.progress_info.libre_eleccion+'%'}}>
+            <p>{historyData.progress_info.libre_eleccion.toFixed(2)}%</p>
+          </div>
+        </div>
+        <div className="progress-profile-skill progress-profile-javascript">
+          <h6><i className="progress-profile-fab progress-profile-fa-js"></i>NIVELACION</h6>
+          <div className="progress-profile-bar" style={{width: historyData.progress_info.nivelacion+'%'}}>
+            <p>{historyData.progress_info.nivelacion.toFixed(2)}%</p>
           </div>
         </div>
       </div>

@@ -45,7 +45,7 @@ const CurriculumGraph = ({
           }
           subgraph cluster_2 {
             label="Semestre C";
-            anita carenina 23;
+            "carenina: 23 \ncositas nn";
             q;
             w;
             e;
