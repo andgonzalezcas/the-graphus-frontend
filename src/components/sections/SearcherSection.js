@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import CurriculumGraph from "./CurriculumGraph.js"
+import Loading from '../elements/Loading'
 
 const SearcherSection = ({ }) => {
 
@@ -86,7 +87,7 @@ const SearcherSection = ({ }) => {
       </section>
     );
   } else {
-    return (<p>Loading...</p>)
+    return <Loading />
   }
 
 }
