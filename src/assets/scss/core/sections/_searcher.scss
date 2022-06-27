@@ -1,0 +1,40 @@
+.program-list {
+    @include progress-flex(row, center, center);
+    margin-bottom: 30px;
+
+    .program-card {
+        @include progress-flex(column, center, center);
+        @include neon-border(white);
+        border-radius: 20px;
+        padding: 30px;
+        margin: 0 20px;
+        background-color: transparent;
+        width: 300px;
+        height: 150px;
+
+        .program-card-title {
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .program-card-code {
+            color: grey;
+            @include font-family(code);
+            letter-spacing: 3px;
+        }
+
+        &:hover {
+            background-color: #3b3b3b5c;
+            cursor: pointer;
+        }
+    }
+
+    .border-red {
+        @include neon-border(#ff00005b);
+    }
+    .border-blue{
+        @include neon-border(#36014658);
+    }
+}
