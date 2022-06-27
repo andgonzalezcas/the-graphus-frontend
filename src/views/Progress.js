@@ -20,10 +20,7 @@ const Progress = () => {
         'Authorization': token, 
     })
     }).then(response => response.json())
-    .then(response => {
-      setHistoryData(response.success)
-      console.log(historyData)
-    })
+    .then(response => { setHistoryData(response.success) })
     .catch(error => console.error('Error:', error))
   }, [])
   
@@ -39,12 +36,14 @@ const Progress = () => {
   const outerClasses = 'hero section center-content has-top-divide has-bottom-divider'
 
   if (token) {
-    return (
-      <>
-        <ProgressProfile user={user} historyData={historyData}/>
-        <ProgressSlide className="illustration-section-02" historyData={historyData}/>
-      </>
-    )
+    if (historyData) {
+      return (
+        <>
+          <ProgressProfile user={user} historyData={historyData}/>
+          <ProgressSlide className="illustration-section-02" historyData={historyData}/>
+        </>
+      )
+    } return <div>Loading ...</div>
   }
   return (
     <section
