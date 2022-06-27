@@ -6,7 +6,7 @@ const handleStyle = { left: 10 };
 function CourseNode({data}) {
 
     return (
-        <div className={`course-node color-${data.color}`}>
+        <div className={`course-node color-${data.color} ${data.priority ? `background-${data.priority}` : ''}`}>
             <Handle type="target" position={Position.Left} />
             <div>
                 <div className='course-title'>{data.name}</div>
