@@ -19,7 +19,7 @@ const defaultProps = {
   videoTag: 'iframe'
 }
 
-const Modal = ({
+const ModalRequeriments = ({
   className,
   children,
   handleClose,
@@ -83,7 +83,7 @@ const Modal = ({
   )
 }
 
-Modal.propTypes = propTypes;
-Modal.defaultProps = defaultProps;
+ModalRequeriments.propTypes = propTypes;
+ModalRequeriments.defaultProps = defaultProps;
 
-export default Modal;
+export default ModalRequeriments;

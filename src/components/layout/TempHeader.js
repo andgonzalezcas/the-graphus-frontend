@@ -157,16 +157,15 @@ const Header = ({
                     <li>
                       <Link to="/searcher" className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Buscador</Link>
                     </li>
+                    <li>
+                      <Link to="/progress" className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Progreso</Link>
+                    </li>
+                    <li>
+                      <Link to="/curriculum" className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Curriculum</Link>
+                    </li>
                     {
                       hideSignin ?
-                      <>
-                        <li>
-                          <Link to="/progress" className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Progreso</Link>
-                        </li>
-                        <li>
-                          <Link to="/curriculum" className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Curriculum</Link>
-                        </li>
-                      </>:
+                      <></>:
                       <></>
                     }
                   </ul>

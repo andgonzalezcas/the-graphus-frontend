@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux'
 import classNames from 'classnames';
 
 import SemesterSlide from "../elements/curriculumElements/SemesterSlide";
+import CurriculumCard from "../elements/curriculumElements/CurriculumCard";
 
 const CurriculumProgram = ({
   className,
@@ -16,8 +17,32 @@ const CurriculumProgram = ({
 }) => {
   const token = useSelector((state) => state.token.value)
   const [data, setData] = useState()
+  const [criticalPath, setCriticalPath] = useState()
   const [filter, setFilter] = useState(1)
   const [filtersArray, setFiltersArray] = useState([])
+  const criticalPathFilter = ["critica", "importante", "disponible"]
+  const [actualCriticalPath, setActualCriticalPath] =useState("critica")
+
+  const getCriticalPath = (data) => {
+    const returnArray = {
+      critica: [],
+      importante: [],
+      disponible: []
+    }
+
+    data.semesters.map((semester) => {
+      semester.courses.map((course) => {
+        if(course.priority === 'critical')
+          returnArray.critica.push(course)
+        else if (course.priority === 'important')
+          returnArray.importante.push(course)
+        else if (course.priority === 'available')
+          returnArray.disponible.push(course)
+        })
+    })
+
+    return returnArray
+  }
 
   const getRequeriments = (requeriments) => {
     const returnData = []
@@ -49,6 +74,7 @@ const CurriculumProgram = ({
     if (data) {
       setFiltersArray(getSemesters(data.semesters))
       setFilter(0)
+      setCriticalPath(getCriticalPath(data))
     }
   }, [data])
 
@@ -61,7 +87,7 @@ const CurriculumProgram = ({
     className
   );
 
-  if (data) {
+  if (data && criticalPath) {
     return (
       <>
         <section
@@ -89,6 +115,28 @@ const CurriculumProgram = ({
             </div>
             <SemesterSlide semester={data.semesters[filter]} getRequeriments={getRequeriments} />
           </div>
+        </section>
+        <section
+          {...props}
+          className={outerClasses}
+        >
+          <h1 className="mt-10 mb-16">
+            <span className="text-color-primary">Ruta {actualCriticalPath}</span>
+          </h1>
+          <div className="pagination-container">
+            {
+              criticalPathFilter.map((filter, index) => {
+                return (
+                  <div className="pagination-number" key={index} onClick={() => { setActualCriticalPath(filter) }}>
+                    {filter}
+                  </div>
+                )
+              })
+            }
+          </div>
+          <main className="page-progress-content">
+            { criticalPath[actualCriticalPath].map((course, index) => <CurriculumCard key={index} course={course} getRequeriments={getRequeriments}/> ) }
+          </main>
         </section>
       </>
     );
