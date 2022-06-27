@@ -1,5 +1,4 @@
 import React from 'react'
-import ModalRequeriments from '../ModalRequeriments'
 
 const CurriculumCard = ({ course, getRequeriments }) => {
 

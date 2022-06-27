@@ -140,7 +140,7 @@ const CurriculumProgram = ({
         </section>
       </>
     );
-  } return <p>Loading ...</p>
+  } return <></>
 }
 
 export default CurriculumProgram;

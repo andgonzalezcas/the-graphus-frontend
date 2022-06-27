@@ -44,8 +44,8 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: 'Todo lo que puedes hacer',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: 'Que hacemos?',
+    paragraph: 'The Graphus es una aplicación web cuyo propósito es servir de apoyo a los estudiantes de la Universidad Nacional de Colombia, en la planeación de la inscripción de materias y el seguimiento al plan de estudios. The Graphus busca que, de una manera ágil y sencilla, los usuarios tengan las herramientas para llevar un control del progreso, planeación y proyección del camino necesario para culminar los estudios. La aplicación funciona como un complemento del sistema de información académica SIA.'
   };
 
   return (
@@ -71,11 +71,11 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                    Seguridad
+                  </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    The Graphus una vez implementado no comparte la información de la universidad o de sus estudiantes con terceros todo proceso dentro The Graphus es completamente transparente a la universidad.
+                  </p>
                 </div>
               </div>
             </div>
@@ -93,11 +93,11 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                    Desde la comunidad, para la comunidad
+                  </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    La aplicación es desarrollada por estudiantes que conocen bien el problema
+                  </p>
                 </div>
               </div>
             </div>
@@ -115,11 +115,15 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                    Sin animo de lucro
+                  </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    Nuestras fuentes de financiacion esperadas son:
+                    • Credito bancario
+                    • Donaciones
+                    • Ángeles de negocios
+                    • Fondos propios
+                  </p>
                 </div>
               </div>
             </div>
@@ -137,11 +141,11 @@ const FeaturesTiles = ({
                 </div>
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                    Nota:
+                  </h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    Es importante aclarar que The Graphus no reemplaza el sistema de automatrícula usado en el SIA. La aplicación permite planear con anticipación la inscripción de materias usando la información que proviene del SIA y así tomar mejores decisiones sobre qué asignaturas tomar en el semestre de interés.
+                  </p>
                 </div>
               </div>
             </div>
