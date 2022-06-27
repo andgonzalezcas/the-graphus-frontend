@@ -80,28 +80,29 @@ const Header = ({
   );
 
   const dispatch = useDispatch();
-  
+
   const responseGoogle = (googleResponse) => {
     const URL = process.env.REACT_APP_BACKEND_HOST + "/users/login"
-    if(googleResponse.tokenId){
-      const data = {tokenId: googleResponse.tokenId}
+    if (googleResponse.tokenId) {
+      const data = { tokenId: googleResponse.tokenId }
       fetch(URL, {
         method: 'POST',
         body: JSON.stringify(data),
-        headers:{ 'Content-Type': 'application/json' }
+        headers: { 'Content-Type': 'application/json' }
       }).then(response => response.json())
-      .then(response => {
-        dispatch(setToken(response.success.authorization.access_token))
-        dispatch(setUser({
-          'name': `${googleResponse.profileObj.givenName} ${googleResponse.profileObj.familyName}`,
-          'image': googleResponse.profileObj.imageUrl
-        }))
-        handleLogin();
-      })
-      .catch(error => console.error('Error:', error))
+        .then(response => {
+          dispatch(setToken(response.success.authorization.access_token))
+          dispatch(setUser({
+            'name': `${googleResponse.profileObj.givenName} ${googleResponse.profileObj.familyName}`,
+            'image': googleResponse.profileObj.imageUrl,
+            'googleId': googleResponse.tokenId
+          }))
+          handleLogin();
+        })
+        .catch(error => console.error('Error:', error))
     }
   }
-  
+
   let history = useHistory();
   const handleLogin = () => {
     setHideSignin(!hideSignin)
@@ -159,15 +160,15 @@ const Header = ({
                     </li>
                     {
                       hideSignin ?
-                      <>
-                        <li>
-                          <Link to="/progress" className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Progress</Link>
-                        </li>
-                        <li>
-                          <Link to="/curriculum" className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Curriculum</Link>
-                        </li>
-                      </>:
-                      <></>
+                        <>
+                          <li>
+                            <Link to="/progress" className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Progress</Link>
+                          </li>
+                          <li>
+                            <Link to="/curriculum" className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Curriculum</Link>
+                          </li>
+                        </> :
+                        <></>
                     }
                   </ul>
                   {!hideSignin &&
@@ -187,7 +188,7 @@ const Header = ({
                         />
                       </li>
                     </ul>}
-                    {hideSignin &&
+                  {hideSignin &&
                     <ul
                       className="list-reset header-nav-right"
                     >

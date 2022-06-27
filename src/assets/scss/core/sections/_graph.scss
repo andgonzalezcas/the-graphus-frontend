@@ -55,8 +55,9 @@
     }
 
     .course-code {
-        color: #333;
+        color: #b4b4b4;
         font-size: 25px;
+        @include font-family(code);
     }
 
     .course-expertise {
