@@ -65,8 +65,8 @@ const CurriculumGraph = (props) => {
         <section
           className='hero section center-content'
         >
-          <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-            Great things <span className="text-color-primary">comming soon</span>
+          <h1 className="mt-50 mb-16">
+            Grafo <span className="text-color-primary">Curricular</span>
           </h1>
           <div className="graph-container">
             <ReactFlow
@@ -81,7 +81,7 @@ const CurriculumGraph = (props) => {
       </>
     );
   } else {
-    return <p>loading</p>
+    return <></>
   }
 }
 

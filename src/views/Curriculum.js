@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from 'react-redux'
+import Loading from "../components/elements/Loading";
 
 // Sections
 import CurriculumGraph from "../components/sections/CurriculumGraph";
@@ -14,12 +15,13 @@ const Curriculum = () => {
     fetch(URL, {
       headers: new Headers({ 'Authorization': token })
     }).then(response => response.json())
-      .then(response => { 
+      .then(response => {
         setData(response.success);
         console.log(response.success);
       })
       .catch(error => console.error('Error:', error))
   }, []);
+
   if (data) {
     return (
       <>
@@ -29,7 +31,7 @@ const Curriculum = () => {
       </>
     )
   } else {
-    return <p>Loading...</p>
+    return <Loading/>
   }
 }
 

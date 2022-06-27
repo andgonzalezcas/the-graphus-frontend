@@ -50,8 +50,8 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: 'Como lo puedes hacer?',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: 'Que se resuelve?',
+    paragraph: 'La información referente al plan de estudios (malla curricular) no se encuentra integrada en el mismo lugar en que los estudiantes encuentran la información sobre su respectiva historia académica. Debido a esto, los estudiantes solo tienen la oportunidad de conocer las materias que pueden cursar durante la inscripción de materias y no en otros momentos. La universidad nacional de Colombia maneja el avance del plan de estudios por créditos aprobados en grupos determinados o categorías. Por ejemplo, en ingeniería existe un componente llamado de "fundamentación" que requiere que el estudiante apruebe el conjunto de materias que completan la cantidad de créditos asignados al componente. Las materias que hacen parte del componente no siempre aparecen en la malla, además no es fácil conocer los pre-requisitos necesarios de la asignatura incluso con la malla como apoyo. The Graphus ayuda a resolver estos problemas.'
   };
 
   return (
@@ -67,14 +67,14 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
+                  A quien nos dirigimos
+                </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
-                  </h3>
+                  Los clientes reconocen el problema?
+                </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                  La inscripción de materias es una parte muy importante durante el desarrollo de la carrera universitaria. Una inscripción confiable permite disminuir el riesgo de retrasos en el avance e incluso permiten tomar decisiones en caso de imprevistos como tener que repetir una materia. La idea de The Graphus nace de los inconvenientes que los estudiantes presentan al seguir el plan de estudios.
+                </p>
               </div>
               <div className={
                 classNames(
@@ -93,14 +93,14 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
+                  Nuestro enfoque
+                </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
-                  </h3>
+                  Que se resuelve?
+                </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                  La información referente al plan de estudios (malla curricular) no se encuentra integrada en el mismo lugar en que los estudiantes encuentran la información sobre su respectiva historia académica. Debido a esto, los estudiantes solo tienen la oportunidad de conocer las materias que pueden cursar durante la inscripción de materias y no en otros momentos. La universidad nacional de Colombia maneja el avance del plan de estudios por créditos aprobados en grupos determinados o categorías. Por ejemplo, en ingeniería existe un componente llamado de "fundamentación" que requiere que el estudiante apruebe el conjunto de materias que completan la cantidad de créditos asignados al componente. Las materias que hacen parte del componente no siempre aparecen en la malla, además no es fácil conocer los pre-requisitos necesarios de la asignatura incluso con la malla como apoyo. The Graphus ayuda a resolver estos problemas.
+                </p>
               </div>
               <div className={
                 classNames(
@@ -119,14 +119,14 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
-                  </div>
+                  Nuestro plan de acción
+                </div>
                 <h3 className="mt-0 mb-12">
-                  Data-driven insights
-                  </h3>
+                  Como se resuelve?
+                </h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                  The Graphus integra la información que existe en las mallas con la información de la historia académica y las materias disponibles durante la inscripción. Esta información no siempre está disponible ni se encuentra en el mismo sitio. Con The Graphus el estudiante podrá realizar un seguimiento a las inscripciones realizadas en periodos previos, avance de carrera e inscripción de materias en un solo lugar.
+                </p>
               </div>
               <div className={
                 classNames(
