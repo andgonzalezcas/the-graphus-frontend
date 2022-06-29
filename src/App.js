@@ -16,6 +16,9 @@ import Progress from './views/Progress'
 import Curriculum from './views/Curriculum'
 import Error from './views/Error'
 import Searcher from './views/Searcher';
+import Terms from './views/Terms';
+import About from './views/AboutUs';
+import FrecuentAsks from './views/FrecuentAsks';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -46,6 +49,9 @@ const App = () => {
           <AppRoute exact path="/progress" component={Progress} layout={LayoutDefault} />
           <AppRoute exact path="/curriculum" component={Curriculum} layout={LayoutDefault} /> 
           <AppRoute excat path="/searcher" component={Searcher} layout={LayoutDefault}/>
+          <AppRoute excat path="/terms" component={Terms} layout={LayoutDefault}/>
+          <AppRoute excat path="/about" component={About} layout={LayoutDefault}/>
+          <AppRoute excat path="/questions" component={FrecuentAsks } layout={LayoutDefault}/>
           <AppRoute path="*" component={Error} layout={LayoutDefault} />
         </Switch>
       )} />
