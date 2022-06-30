@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
+import { Link } from 'react-router-dom';
 
 const propTypes = {
   ...SectionProps.types
@@ -66,6 +67,11 @@ const Hero = ({
                 Mira tu historia academica, planea tu semestre, visualiza el avance de tu carrera.
                 </p>
             </div>
+          </div>
+          <div className="container-xs">
+            <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
+              Nota: Tenga en cuenta que al usar esta aplicacion esta aceptando los terminos y condiciones de nuestra pagina, los cuales los puede ver en el siguiente apartado: <Link to="/terms">Terminos y condiciones</Link>
+            </p>
           </div>
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
             <a
