@@ -34,12 +34,12 @@ const Header = ({
   bottomDivider,
   ...props
 }) => {
-
+  
   const [isActive, setIsactive] = useState(false);
-
+  
   const nav = useRef(null);
   const hamburger = useRef(null);
-
+  
   useEffect(() => {
     isActive && openMenu();
     document.addEventListener('keydown', keyPress);
@@ -50,7 +50,11 @@ const Header = ({
       closeMenu();
     };
   });
-
+  
+  useEffect(() => {
+    console.log(process.env.REACT_APP_CLIENT_ID_GOOGLE)
+  }, [])
+  
   const openMenu = () => {
     document.body.classList.add('off-nav-is-active');
     nav.current.style.maxHeight = nav.current.scrollHeight + 'px';
@@ -82,6 +86,7 @@ const Header = ({
   const dispatch = useDispatch();
 
   const responseGoogle = (googleResponse) => {
+
     const URL = process.env.REACT_APP_BACKEND_HOST + "/users/login"
     if (googleResponse.tokenId) {
       const data = { tokenId: googleResponse.tokenId }
