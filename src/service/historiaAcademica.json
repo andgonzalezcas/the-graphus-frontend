@@ -1,0 +1,392 @@
+{
+  "success": {
+    "PA": 4.0,
+    "PAPA": 4.0,
+    "academic_history_code": "2089",
+    "student_sub": "13661626335",
+    "program_info": {
+      "code": "2879",
+      "name": "Ingeniería de sistemas y computación"
+    },
+    "progress_info": {
+      "total": 64.8,
+      "disciplinar": 52,
+      "fundamentacion": 100,
+      "libre_eleccion": 51.5151,
+      "nivelacion": 100
+    },
+    "credits_info": {
+      "total": 107,
+      "disciplinar": 39,
+      "fundamentacion": 51,
+      "libre_eleccion": 17,
+      "nivelacion": 12
+    },
+    "semesters": [
+      {
+        "semester": 1,
+        "semester_label": "2019-1S",
+        "PAPPI": 4.175,
+        "courses": [
+          {
+            "code": "1000004-B",
+            "color": "blue",
+            "credits": 4,
+            "grade": 3.2,
+            "identifier": "1",
+            "last_time_seen": 0,
+            "name": "Cálculo diferencial",
+            "passed": 1
+          },
+          {
+            "code": "2025975",
+            "color": "blue",
+            "credits": 3,
+            "grade": 4.4,
+            "identifier": "2",
+            "last_time_seen": 0,
+            "name": "Introducción a la ingeniería de sistemas y computación",
+            "passed": 1
+          },
+          {
+            "code": "2028285-B",
+            "color": "white",
+            "credits": 3,
+            "grade": 4.2,
+            "identifier": "1",
+            "last_time_seen": 0,
+            "name": "Cátedra Marta Traba: La vida con diseño, un derecho cotidiano del ser humano",
+            "passed": 1
+          },
+          {
+            "code": "2015734",
+            "color": "white",
+            "credits": 3,
+            "grade": 4.4,
+            "identifier": "2",
+            "last_time_seen": 0,
+            "name": "Programación de computadores",
+            "passed": 1
+          }
+        ],
+        "credits": 13,
+        "current": 0
+      },
+      {
+        "semester": 2,
+        "semester_label": "2019-2S",
+        "PAPPI": 4,
+        "courses": [
+          {
+            "code": "1000003-B",
+            "color": "blue",
+            "credits": 4,
+            "grade": 3.4,
+            "identifier": "4",
+            "last_time_seen": 0,
+            "name": "Álgebra Lineal",
+            "passed": 1
+          },
+          {
+            "code": "1000005-B",
+            "color": "blue",
+            "credits": 4,
+            "grade": 3.2,
+            "identifier": "5",
+            "last_time_seen": 0,
+            "name": "Cálculo integral",
+            "passed": 1
+          },
+          {
+            "code": "2016698",
+            "color": "yellow",
+            "credits": 3,
+            "grade": 4.5,
+            "identifier": "4",
+            "last_time_seen": 0,
+            "name": "Elementos de computadores",
+            "passed": 1
+          },
+          {
+            "code": "1000019-B",
+            "color": "yellow",
+            "credits": 4,
+            "grade": 3.2,
+            "identifier": "5",
+            "last_time_seen": 1,
+            "name": "Fundamentos de mecánica",
+            "passed": 1
+          },
+          {
+            "code": "2016070",
+            "color": "white",
+            "credits": 2,
+            "grade": 4.4,
+            "identifier": "4",
+            "last_time_seen": 0,
+            "name": "Fundamentos tecnológicos: Formatos y medidas",
+            "passed": 1
+          },
+          {
+            "code": "2016375",
+            "color": "white",
+            "credits": 3,
+            "grade": 3.1,
+            "identifier": "5",
+            "last_time_seen": 1,
+            "name": "Programación orientada a objetos",
+            "passed": 1
+          }
+        ],
+        "credits": 20,
+        "current": 0
+      },
+      {
+        "semester": 3,
+        "semester_label": "2020-1S",
+        "PAPPI": 4,
+        "courses": [
+          {
+            "code": "2016697",
+            "color": "yellow",
+            "credits": 3,
+            "grade": 3.5,
+            "identifier": "4",
+            "last_time_seen": 1,
+            "name": "Arquitectura de computadores",
+            "passed": 1
+          },
+          {
+            "code": "2016353",
+            "color": "yellow",
+            "credits": 3,
+            "grade": 4,
+            "identifier": "3",
+            "last_time_seen": 1,
+            "name": "Bases de datos",
+            "passed": 1
+          },
+          {
+            "code": "1000006-B",
+            "color": "blue",
+            "credits": 4,
+            "grade": 3.9,
+            "identifier": "4",
+            "last_time_seen": 1,
+            "name": "Cálculo en varias variables",
+            "passed": 1
+          },
+          {
+            "code": "2025963",
+            "color": "green",
+            "credits": 4,
+            "grade": 4.7,
+            "identifier": "3",
+            "last_time_seen": 1,
+            "name": "Matemáticas discretas I",
+            "passed": 1
+          },
+          {
+            "code": "1000013-B",
+            "color": "green",
+            "credits": 3,
+            "grade": 3.9,
+            "identifier": "3",
+            "last_time_seen": 1,
+            "name": "Probabilidad y estadística fundamental",
+            "passed": 1
+          }
+        ],
+        "credits": 18,
+        "current": 1
+      },
+      {
+        "semester": 4,
+        "semester_label": "2020-2S",
+        "PAPPI": 4,
+        "courses": [
+          {
+            "code": "1000017-B",
+            "color": "yellow",
+            "credits": 4,
+            "grade": 3.7,
+            "identifier": "4",
+            "last_time_seen": 1,
+            "name": "Fundamentos de electricidad y magnetismo",
+            "passed": 1
+          },
+          {
+            "code": "2015703",
+            "color": "orange",
+            "credits": 3,
+            "grade": 3.9,
+            "identifier": "3",
+            "last_time_seen": 1,
+            "name": "Ingeniería económica",
+            "passed": 1
+          },
+          {
+            "code": "1000047-B",
+            "color": "white",
+            "credits": 3,
+            "grade": 5,
+            "identifier": "4",
+            "last_time_seen": 1,
+            "name": "Inglés IV - Semestral",
+            "passed": 1
+          },
+          {
+            "code": "2025964",
+            "color": "green",
+            "credits": 4,
+            "grade": 4.9,
+            "identifier": "3",
+            "last_time_seen": 1,
+            "name": "Matemáticas discretxas II",
+            "passed": 1
+          },
+          {
+            "code": "2016707",
+            "color": "green",
+            "credits": 3,
+            "grade": 4.4,
+            "identifier": "3",
+            "last_time_seen": 1,
+            "name": "Sistemas operativos",
+            "passed": 1
+          }
+        ],
+        "credits": 17,
+        "current": 1
+      },
+      {
+        "semester": 5,
+        "semester_label": "2021-1S",
+        "PAPPI": 4,
+        "courses": [
+          {
+            "code": "2016699",
+            "color": "white",
+            "credits": 3,
+            "grade": 4.8,
+            "identifier": "4",
+            "last_time_seen": 1,
+            "name": "Estructuras de datos",
+            "passed": 1
+          },
+          {
+            "code": "2015702",
+            "color": "orange",
+            "credits": 3,
+            "grade": 4.6,
+            "identifier": "3",
+            "last_time_seen": 1,
+            "name": "Gerencia y gestión de proyectos",
+            "passed": 1
+          },
+          {
+            "code": "2015174",
+            "color": "green",
+            "credits": 4,
+            "grade": 5,
+            "identifier": "4",
+            "last_time_seen": 1,
+            "name": "Introducción a la teoría de la computación",
+            "passed": 1
+          },
+          {
+            "code": "2015970",
+            "color": "green",
+            "credits": 3,
+            "grade": 3.8,
+            "identifier": "3",
+            "last_time_seen": 1,
+            "name": "Métodos numéricos",
+            "passed": 1
+          },
+          {
+            "code": "2025970",
+            "color": "green",
+            "credits": 3,
+            "grade": 4.7,
+            "identifier": "3",
+            "last_time_seen": 1,
+            "name": "Modelos y simulación",
+            "passed": 1
+          }
+        ],
+        "credits": 16,
+        "current": 1
+      },
+      {
+        "semester": 6,
+        "semester_label": "2021-2S",
+        "PAPPI": 4,
+        "courses": [
+          {
+            "code": "2016696",
+            "color": "green",
+            "credits": 3,
+            "grade": 3.8,
+            "identifier": "4",
+            "last_time_seen": 1,
+            "name": "Algoritmos",
+            "passed": 1
+          },
+          {
+            "code": "2016133",
+            "color": "white",
+            "credits": 3,
+            "grade": 4.7,
+            "identifier": "3",
+            "last_time_seen": 1,
+            "name": "Ciudad, hábitat y vivienda",
+            "passed": 1
+          },
+          {
+            "code": "2016701",
+            "color": "white",
+            "credits": 3,
+            "grade": 4.3,
+            "identifier": "4",
+            "last_time_seen": 1,
+            "name": "Ingeniería de software I",
+            "passed": 1
+          },
+          {
+            "code": "2025971",
+            "color": "green",
+            "credits": 3,
+            "grade": 4.2,
+            "identifier": "3",
+            "last_time_seen": 1,
+            "name": "Optimización",
+            "passed": 1
+          },
+          {
+            "code": "2025967",
+            "color": "green",
+            "credits": 3,
+            "grade": 3.5,
+            "identifier": "3",
+            "last_time_seen": 1,
+            "name": "Redes de computadores",
+            "passed": 1
+          },
+          {
+            "code": "2025982",
+            "color": "yellow",
+            "credits": 3,
+            "grade": 3.2,
+            "identifier": "3",
+            "last_time_seen": 1,
+            "name": "Sistemas de información",
+            "passed": 1
+          }
+        ],
+        "credits": 18,
+        "current": 1
+      }
+    ]
+  }
+}

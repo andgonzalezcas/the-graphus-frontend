@@ -1,5 +1,7 @@
 {
   "success": {
+    "academic_history_code": "2089",
+    "student_sub": "13661626335",
     "program_info": {
       "code": "2879",
       "name": "Ingeniería de sistemas y computación"
@@ -18,6 +20,7 @@
             "identifier": 1,
             "name": "Cálculo diferencial",
             "passed": 1,
+            "priority": null,
             "requirements": []
           },
           {
@@ -30,18 +33,20 @@
             "identifier": 2,
             "name": "Introducción a la ingeniería de sistemas y computación",
             "passed": 1,
+            "priority": null,
             "requirements": []
           },
           {
-            "available": 1,
+            "available": 0,
             "code": "2015734",
             "color": "white",
             "credits": 3,
-            "delay": 2,
+            "delay": 0,
             "expertise": "Métodos y tecnologias de software",
             "identifier": 3,
             "name": "Programación de computadores",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": []
           }
         ]
@@ -54,53 +59,57 @@
             "code": "1000019",
             "color": "yellow",
             "credits": 4,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Fisica",
             "identifier": 4,
             "name": "Fundamentos de mecánica",
             "passed": 1,
+            "priority": null,
             "requirements": [
               0
             ]
           },
           {
-            "available": 1,
+            "available": 0,
             "code": "1000005",
             "color": "blue",
             "credits": 4,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Matemáticas",
             "identifier": 5,
             "name": "Cálculo integral",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               1
             ]
           },
           {
-            "available": 1,
+            "available": 0,
             "code": "1000003",
             "color": "blue",
             "credits": 4,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Matemáticas",
             "identifier": 6,
             "name": "Álgebra lineal",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               1
             ]
           },
           {
-            "available": 1,
+            "available": 0,
             "code": "2016375",
             "color": "white",
             "credits": 3,
-            "delay": 2,
+            "delay": 0,
             "expertise": "Métodos y tecnologias de software",
             "identifier": 7,
             "name": "Programación orientada a objetos",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               3
             ]
@@ -115,11 +124,12 @@
             "code": "1000013",
             "color": "blue",
             "credits": 3,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Probabilidad y estadística",
             "identifier": 8,
             "name": "Probabilidad y estadística",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               5
             ]
@@ -129,11 +139,12 @@
             "code": "1000006",
             "color": "blue",
             "credits": 4,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Matemáticas",
             "identifier": 9,
             "name": "Calculo en varias variables",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               5,
               6
@@ -144,39 +155,42 @@
             "code": "2025963",
             "color": "green",
             "credits": 4,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Ciencias de la computación",
             "identifier": 10,
             "name": "Matemáticas discretas I",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               6
             ]
           },
           {
-            "available": 1,
+            "available": 0,
             "code": "2016353",
             "color": "yellow",
             "credits": 3,
-            "delay": 2,
+            "delay": 0,
             "expertise": "Infraestructura computación e información",
             "identifier": 11,
             "name": "Bases de datos",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               7
             ]
           },
           {
-            "available": 1,
+            "available": 0,
             "code": "2016698",
             "color": "yellow",
             "credits": 3,
-            "delay": 2,
+            "delay": 0,
             "expertise": "Infraestructura computación e información",
             "identifier": 12,
             "name": "Elementos de computadores",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               2
             ]
@@ -191,11 +205,12 @@
             "code": "1000017",
             "color": "yellow",
             "credits": 4,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Fisica",
             "identifier": 13,
             "name": "Fundamentos de electricidad y magnetismo",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               5
             ]
@@ -205,11 +220,12 @@
             "code": "2015703",
             "color": "orange",
             "credits": 3,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Ciencias económicas y administrativas",
             "identifier": 14,
             "name": "Ingeniería económica",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               9
             ]
@@ -219,39 +235,42 @@
             "code": "2025964",
             "color": "green",
             "credits": 4,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Ciencias de la computación",
             "identifier": 15,
             "name": "Matemáticas discretas II",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               10
             ]
           },
           {
-            "available": 1,
+            "available": 0,
             "code": "2016699",
             "color": "white",
             "credits": 3,
-            "delay": 2,
+            "delay": 0,
             "expertise": "Métodos y tecnologias de software",
             "identifier": 16,
             "name": "Estructuras de datos",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               7
             ]
           },
           {
-            "available": 1,
+            "available": 0,
             "code": "2016697",
             "color": "yellow",
             "credits": 3,
-            "delay": 2,
+            "delay": 0,
             "expertise": "Infraestructura computación e información",
             "identifier": 17,
             "name": "Arquitectura de computadores",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               12
             ]
@@ -266,11 +285,12 @@
             "code": "2025970",
             "color": "green",
             "credits": 3,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Sistemas modelos optimización y simulación",
             "identifier": 18,
             "name": "Modelos y simulación",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               7,
               8,
@@ -283,11 +303,12 @@
             "code": "2015702",
             "color": "orange",
             "credits": 3,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Ciencias económicas y administrativas",
             "identifier": 19,
             "name": "Gerencia y gestión de proyectos",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               14
             ]
@@ -297,11 +318,12 @@
             "code": "2025967",
             "color": "yellow",
             "credits": 3,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Infraestructura computación e información",
             "identifier": 20,
             "name": "Redes de computadores",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               13,
               16,
@@ -309,30 +331,32 @@
             ]
           },
           {
-            "available": 1,
+            "available": 0,
             "code": "2016701",
             "color": "white",
             "credits": 3,
-            "delay": 2,
+            "delay": 0,
             "expertise": "Métodos y tecnologias de software",
             "identifier": 21,
             "name": "Ingeniería de software I",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               11,
               16
             ]
           },
           {
-            "available": 1,
+            "available": 0,
             "code": "2015174",
             "color": "green",
             "credits": 4,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Ciencias de la computación",
             "identifier": 22,
             "name": "Introducción a la teória de la computación",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               10,
               17
@@ -348,11 +372,12 @@
             "code": "2025971",
             "color": "green",
             "credits": 3,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Sistemas modelos optimización y simulación",
             "identifier": 23,
             "name": "Optimización",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               18
             ]
@@ -362,11 +387,12 @@
             "code": "2015970",
             "color": "green",
             "credits": 3,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Ciencias de la computación",
             "identifier": 24,
             "name": "Métodos Númericos",
-            "passed": 0,
+            "passed": 1,
+            "priority": "important",
             "requirements": [
               9,
               14
@@ -377,11 +403,12 @@
             "code": "2025982",
             "color": "yellow",
             "credits": 3,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Infraestructura computación e información",
             "identifier": 25,
             "name": "Sistemas de información",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               7,
               19
@@ -392,26 +419,28 @@
             "code": "2016702",
             "color": "white",
             "credits": 3,
-            "delay": 2,
+            "delay": 1,
             "expertise": "Métodos y tecnologias de software",
             "identifier": 26,
             "name": "Ingeniería de software II",
             "passed": 0,
+            "priority": "critical",
             "requirements": [
               20,
               21
             ]
           },
           {
-            "available": 1,
+            "available": 0,
             "code": "2016696",
             "color": "green",
             "credits": 3,
-            "delay": 2,
+            "delay": 0,
             "expertise": "Ciencias de la computación",
             "identifier": 27,
             "name": "Algoritmos",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               8,
               15,
@@ -419,15 +448,16 @@
             ]
           },
           {
-            "available": 1,
+            "available": 0,
             "code": "2016707",
             "color": "yellow",
             "credits": 3,
-            "delay": 2,
+            "delay": 0,
             "expertise": "Infraestructura computación e información",
             "identifier": 28,
             "name": "Sistemas operativos",
-            "passed": 0,
+            "passed": 1,
+            "priority": null,
             "requirements": [
               17
             ]
@@ -438,44 +468,47 @@
         "semester": 7,
         "courses": [
           {
-            "available": 0,
+            "available": 1,
             "code": "2025969",
             "color": "green",
             "credits": 3,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Sistemas modelos optimización y simulación",
             "identifier": 29,
             "name": "Modelos estocastícos y simulación en computación y comunicaciones",
             "passed": 0,
+            "priority": "available",
             "requirements": [
               23
             ]
           },
           {
-            "available": 0,
+            "available": 1,
             "code": "2025994",
             "color": "yellow",
             "credits": 3,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Infraestructura computación e información",
             "identifier": 30,
             "name": "Teoría de la Información y Sistemas de Comunicaciones",
             "passed": 0,
+            "priority": "important",
             "requirements": [
               20,
               27
             ]
           },
           {
-            "available": 0,
+            "available": 1,
             "code": "2016703",
             "color": "green",
             "credits": 3,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Sistemas modelos optimización y simulación",
             "identifier": 31,
             "name": "Pensamiento sistemico",
             "passed": 0,
+            "priority": "available",
             "requirements": [
               18,
               25
@@ -486,40 +519,43 @@
             "code": "2016716",
             "color": "white",
             "credits": 3,
-            "delay": 2,
+            "delay": 0,
             "expertise": "Métodos y tecnologias de software",
             "identifier": 32,
             "name": "Arquitectura de software",
             "passed": 0,
+            "priority": null,
             "requirements": [
               26
             ]
           },
           {
-            "available": 0,
+            "available": 1,
             "code": "2025966",
             "color": "white",
             "credits": 3,
-            "delay": 2,
+            "delay": 0,
             "expertise": "Métodos y tecnologias de software",
             "identifier": 33,
             "name": "Lenguajes de programación",
             "passed": 0,
+            "priority": "available",
             "requirements": [
               16,
               22
             ]
           },
           {
-            "available": 0,
+            "available": 1,
             "code": "2025995",
             "color": "yellow",
             "credits": 3,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Computación aplicada e inteligencia computacional",
             "identifier": 34,
             "name": "Introducción a los sistemas inteligentes",
             "passed": 0,
+            "priority": "available",
             "requirements": [
               27
             ]
@@ -530,15 +566,16 @@
         "semester": 8,
         "courses": [
           {
-            "available": 0,
+            "available": 1,
             "code": "2016722",
             "color": "yellow",
             "credits": 3,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Infraestructura computación e información",
             "identifier": 35,
             "name": "Computación paralela y distribuida",
             "passed": 0,
+            "priority": "available",
             "requirements": [
               20,
               27,
@@ -550,11 +587,12 @@
             "code": "2025960",
             "color": "yellow",
             "credits": 3,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Computación aplicada e inteligencia computacional",
             "identifier": 36,
             "name": "Computación visual",
             "passed": 0,
+            "priority": null,
             "requirements": [
               27,
               30
@@ -565,11 +603,12 @@
             "code": "2024045",
             "color": "blue",
             "credits": 3,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Contexto profesional y proyectos de ingeniería",
             "identifier": 37,
             "name": "Taller de proyectos interdisciplinarios",
             "passed": 0,
+            "priority": null,
             "requirements": []
           },
           {
@@ -577,11 +616,12 @@
             "code": "2025983",
             "color": "yellow",
             "credits": 3,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Infraestructura computación e información",
             "identifier": 38,
             "name": "Arquitectura de infraestructura y gobierno de TICs",
             "passed": 0,
+            "priority": null,
             "requirements": [
               25,
               28,
@@ -589,15 +629,16 @@
             ]
           },
           {
-            "available": 0,
+            "available": 1,
             "code": "2025972",
             "color": "yellow",
             "credits": 3,
-            "delay": 1,
+            "delay": 0,
             "expertise": "Infraestructura computación e información",
             "identifier": 39,
             "name": "Criptografía y seguridad de la información",
             "passed": 0,
+            "priority": "available",
             "requirements": [
               8,
               20,
@@ -619,6 +660,7 @@
             "identifier": 39,
             "name": "Trabajo de grado",
             "passed": 0,
+            "priority": null,
             "requirements": [
               8,
               20,
