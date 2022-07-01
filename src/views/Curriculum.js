@@ -20,8 +20,6 @@ const Curriculum = () => {
         console.log(response.success);
       })
       .catch(error => console.error('Error:', error))
-
-    console.log(token)
   }, []);
 
   if (data) {

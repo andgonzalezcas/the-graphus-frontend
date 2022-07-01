@@ -1,6 +1,12 @@
-import React from "react"
+import React, { useEffect } from "react"
+import { useSelector } from 'react-redux'
 
 const Terms = () => {
+  const token = useSelector((state) => state.token.value);
+
+  useEffect(() => {
+    console.log(token)
+  }, [])
   return (
     <section className="hero section center-content has-top-divider has-bottom-divider invert-color">
       <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
