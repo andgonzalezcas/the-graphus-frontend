@@ -50,11 +50,7 @@ const Header = ({
       closeMenu();
     };
   });
-  
-  useEffect(() => {
-    console.log(process.env.REACT_APP_CLIENT_ID_GOOGLE)
-  }, [])
-  
+
   const openMenu = () => {
     document.body.classList.add('off-nav-is-active');
     nav.current.style.maxHeight = nav.current.scrollHeight + 'px';
