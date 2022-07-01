@@ -1,7 +1,6 @@
 import React from "react"
 
 const GabrielImage = require('./../assets/images/Gabriel.jpeg')
-const AndresImage = require('./../assets/images/Andres.jpeg')
 
 const About = () => {
   return (
@@ -11,7 +10,7 @@ const About = () => {
       </h1>
       <section class=" hero-inner section-inner reveal-from-bottom" data-reveal-delay="400">
         <a class="fir-imageover" rel="noopener" target="_blank" href="https://gmail.com">
-          <img class="fir-author-image fir-clickcircle" src="" alt="Alexis Photo" />
+          <img class="fir-author-image fir-clickcircle" src="https://lh3.googleusercontent.com/a-/AOh14GiLRDK3hhO2A8bbV13bgLokbfSAF706hMzAF6EBwg=s64-c" alt="Alexis Photo" />
         </a>
 
         <figcaption>
@@ -23,12 +22,12 @@ const About = () => {
       </section>
       <section class=" hero-inner section-inner reveal-from-bottom" data-reveal-delay="200">
         <a class="fir-imageover" rel="noopener" target="_blank" href="https://gmail.com">
-          <img class="fir-author-image fir-clickcircle" src="" alt="Paul Letelien Photo" />
+          <img class="fir-author-image fir-clickcircle" src="https://lh3.googleusercontent.com/a-/AOh14GjcIDo_enw0zX1VfD7100OYTbO2eyLWCRq5zuZQ0Q=s64-c" alt="Paul Letelien Photo" />
         </a>
 
         <figcaption>
           <div class="fig-author-figure-title">Paul Leteliel Moros Anacona</div>
-          <div class="fig-author-figure-title">Backend - Service Administrator - </div>
+          <div class="fig-author-figure-title">Backend - Service Administrator - pmoros@unal.edu.co</div>
           <div class="fig-author-figure-text">La mision principal de Paul Moros a sido la de brindar un servicio constante a la hora de obtener la informacion del back, trabajo en conjunto con Gabriel principalmente en la creacion de la base de datos, su despliegue y correcto funcionamiento.</div>
         </figcaption>
       </section>
@@ -45,7 +44,7 @@ const About = () => {
       </section>
       <section class=" hero-inner section-inner reveal-from-bottom" data-reveal-delay="200">
         <a class="fir-imageover" rel="noopener" target="_blank" href="https://gmail.com">
-          <img class="fir-author-image fir-clickcircle" src={AndresImage} alt="Camilo Andres Photo" />
+          <img class="fir-author-image fir-clickcircle" src="https://lh3.googleusercontent.com/a-/AOh14GiSSQtuZ38_SHJatliKedza1GoI_A_UVidDKTdaww=s64-c" alt="Camilo Andres Photo" />
         </a>
 
         <figcaption>
@@ -56,12 +55,12 @@ const About = () => {
       </section>
       <section class=" hero-inner section-inner reveal-from-bottom" data-reveal-delay="200">
         <a class="fir-imageover" rel="noopener" target="_blank" href="https://gmail.com">
-          <img class="fir-author-image fir-clickcircle" src="" alt="Eduan Ferney Photo" />
+          <img class="fir-author-image fir-clickcircle" src="https://lh3.googleusercontent.com/a/AATXAJwDuNxum5HIrNfWNuQ2I0RSHnWtPGHRq6z9dOwT=s64-c-mo" alt="Eduan Ferney Photo" />
         </a>
 
         <figcaption>
           <div class="fig-author-figure-title">Eduan Ferney Segura Galindo</div>
-          <div class="fig-author-figure-title">Frontend - main developer - </div>
+          <div class="fig-author-figure-title">Frontend - main developer - edsegurag@unal.edu.co</div>
           <div class="fig-author-figure-text">Junto a Paul lideraron la conexion entre frontend y backend, Ferney fue, por su conocimiento, quien influyo fuertemente en la creacion del grafo para la malla curricular.</div>
         </figcaption>
       </section>

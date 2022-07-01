@@ -55,7 +55,7 @@ const Cta = ({
           <div className="cta-slogan">
             <h1>Apoyanos: </h1>
             <h4 className="m-0">
-              Esta pagina fue creada sin animo de lucro, pero si las ves interesante y quieres apoyarnos puedes hacerlo por medio del siguiente codigo QR:
+              Esta pagina fue creada sin animo de lucro, pero si las ves interesante y quieres apoyarnos puedes hacerlo por medio del siguiente codigo QR de NEQUI:
             </h4>
           </div>
           <div className="cta-action">
