@@ -82,6 +82,7 @@ const Header = ({
   const dispatch = useDispatch();
 
   const responseGoogle = (googleResponse) => {
+    console.log(googleResponse)
 
     const URL = process.env.REACT_APP_BACKEND_HOST + "/users/login"
     if (googleResponse.tokenId) {
