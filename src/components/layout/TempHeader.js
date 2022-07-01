@@ -7,6 +7,7 @@ import Logo from './partials/Logo';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 import { setToken } from './tokenSlice'
 import { setUser } from './userSlice';
+import { setAcademicHistory } from './academicHistory';
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -82,9 +83,7 @@ const Header = ({
   const dispatch = useDispatch();
 
   const responseGoogle = (googleResponse) => {
-    console.log(googleResponse)
-
-    const URL = process.env.REACT_APP_BACKEND_HOST + "/users/login"
+    const URL = process.env.REACT_APP_BACKEND_HOST + "/users/login?Ca=" + googleResponse.ca
     if (googleResponse.tokenId) {
       const data = { tokenId: googleResponse.tokenId }
       fetch(URL, {
@@ -99,6 +98,7 @@ const Header = ({
             'image': googleResponse.profileObj.imageUrl,
             'googleId': googleResponse.tokenId
           }))
+          dispatch(setAcademicHistory(response.success.academic_histories[0]))
           handleLogin();
         })
         .catch(error => console.error('Error:', error))

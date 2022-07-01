@@ -8,10 +8,11 @@ import CurriculumProgram from "../components/sections/CurriculumProgram";
 
 const Curriculum = () => {
   const token = useSelector((state) => state.token.value);
+  const academicHistory = useSelector((state) => state.academicHistory.value)
   const [data, setData] = useState();
 
   useEffect(() => {
-    const URL = process.env.REACT_APP_BACKEND_HOST + '/users/curriculas/?academic_history=1900'
+    const URL = process.env.REACT_APP_BACKEND_HOST + '/users/curriculas/?academic_history=' + academicHistory.code
     fetch(URL, {
       headers: new Headers({ 'Authorization': token })
     }).then(response => response.json())

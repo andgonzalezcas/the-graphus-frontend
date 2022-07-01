@@ -11,9 +11,10 @@ import ProgressSlide from "../components/sections/ProgressSlide";
 const Progress = () => {
   const user = useSelector((state) => state.user.value)
   const token = useSelector((state) => state.token.value)
+  const academicHistory = useSelector((state) => state.academicHistory.value)
   const [historyData, setHistoryData] = useState('')
 
-  const URL = process.env.REACT_APP_BACKEND_HOST + '/users/academic-histories/1900'
+  const URL = process.env.REACT_APP_BACKEND_HOST + '/users/academic-histories/' + academicHistory.code
 
   useEffect(() => { 
     fetch(URL, {

@@ -16,6 +16,7 @@ const CurriculumProgram = ({
   ...props
 }) => {
   const token = useSelector((state) => state.token.value)
+  const academicHistory = useSelector((state) => state.academicHistory.value)
   const [data, setData] = useState()
   const [criticalPath, setCriticalPath] = useState()
   const [filter, setFilter] = useState(1)
@@ -62,7 +63,7 @@ const CurriculumProgram = ({
   }
 
   useEffect(() => {
-    const URL = process.env.REACT_APP_BACKEND_HOST + '/users/curriculas/?academic_history=1900'
+    const URL = process.env.REACT_APP_BACKEND_HOST + '/users/curriculas/?academic_history=' + academicHistory.code
     fetch(URL, {
       headers: new Headers({ 'Authorization': token })
     }).then(response => response.json())
